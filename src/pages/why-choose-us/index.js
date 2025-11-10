@@ -140,7 +140,7 @@ const Choose = () => {
           <div className="w-full lg:w-1/2 relative h-[350px] rounded-xl overflow-hidden shadow-lg">
             <video
               className="absolute inset-0 w-full h-full object-cover"
-              src="/assets/factory-top.mp4"
+              src="/assets/factory-video.mp4"
               autoPlay
               loop
               muted
