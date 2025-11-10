@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# build and cache
+.turbo
+
+# media files (prevent large files in git)
+*.mp4
+*.mov
+*.avi
+*.zip
+*.tar
+*.gz
