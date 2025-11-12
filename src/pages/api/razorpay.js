@@ -41,7 +41,9 @@ export default async function handler(req, res) {
     const options = {
       amount: req.body.amount * 100, // convert to paise
       currency: "INR",
-      receipt: `receipt_order_${Math.random() * 1000}`,
+      // receipt: `receipt_order_${Math.random() * 1000}`,
+      receipt: `receipt_order_${Date.now()}`
+
     };
 
     const order = await razorpay.orders.create(options);

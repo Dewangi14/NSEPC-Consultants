@@ -134,7 +134,7 @@ const Payment = () => {
     name: '',
     email: '',
     phone: '',
-    amount: 500, // you can make this dynamic if needed
+    amount: 36000, // you can make this dynamic if needed
   });
   const [loading, setLoading] = useState(false);
 
@@ -199,6 +199,9 @@ const Payment = () => {
       setLoading(false);
     }
   };
+
+  console.log(process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID)
+
 
   return (
     <div

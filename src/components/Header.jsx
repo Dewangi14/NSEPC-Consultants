@@ -101,7 +101,7 @@ const Header = () => {
           } transition-all duration-300`}
         >
           {menuItems.map((item,idx) => (
-            <div key={idx} className="cursor-pointer hover:text-[#E91E63] transition-colors duration-300" onClick={()=>router.push(item?.link)}>
+            <div key={idx} className="cursor-pointer hover:text-pink-200 hover:-translate-y-0.5 transition-all duration-300" onClick={()=>router.push(item?.link)}>
               {item?.key}
             </div>
           ))}

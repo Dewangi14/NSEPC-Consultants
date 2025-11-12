@@ -130,7 +130,7 @@ export default function EthanolInfoPage() {
 
       <main className="min-h-screen bg-pink-50 text-slate-800">
         {/* HERO */}
-        <section className="relative h-[62vh] md:h-[66vh] lg:h-[72vh] overflow-hidden">
+        <section className="relative h-screen md:h-[66vh] lg:h-[80vh] overflow-hidden">
           <video
             className="absolute inset-0 w-full h-full object-cover"
             src="/assets/ethanol-hero.mp4"
@@ -140,7 +140,7 @@ export default function EthanolInfoPage() {
             playsInline
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#061833]/85 to-[#061833]/50" />
-          <div className="relative max-w-6xl mx-auto px-6 lg:px-20 h-full flex flex-col justify-center items-start gap-6">
+          <div className="relative max-w-6xl mx-auto px-6 lg:px-20 lg:pt-20 h-full flex flex-col justify-center items-start gap-6">
             <motion.h1
               initial={{ y: 12, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -161,7 +161,7 @@ export default function EthanolInfoPage() {
               delivers turnkey ethanol projects.
             </motion.p>
 
-            <div className="mt-4 flex items-center gap-4">
+            <div className="mt-4 flex flex-col md:gap-4 md:flex-row md:items-center">
               <a
                 href="#mission"
                 className="inline-flex items-center gap-3 bg-pink-100 hover:bg-pink-100 text-[#061833] font-semibold px-5 py-3 rounded-full shadow-lg transition"
@@ -171,7 +171,7 @@ export default function EthanolInfoPage() {
               </a>
               <a
                 href="#contact"
-                className="inline-block text-white/90 underline font-bold"
+                className="inline-block text-white/90 underline font-bold mt-5 md:mt-0"
                 aria-label="Contact N.S. EPC Consultants"
               >
                 Contact Us
