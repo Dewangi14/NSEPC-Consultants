@@ -320,7 +320,7 @@ export default function EthanolInfoPage() {
                 India’s farmers.”
               </blockquote>
 
-              <div className="mt-6 flex flex-col-reverse lg:flex gap-4">
+              <div className="mt-6 flex flex-col-reverse lg:flex-row gap-4">
                 <a
                   href="#contact"
                   className="bg-[#061833] text-white px-5 py-2 rounded-full shadow hover:bg-[#0a2850] transition text-center"
