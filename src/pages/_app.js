@@ -5,7 +5,6 @@ import "@/styles/globals.css";
 export default function App({ Component, pageProps }) {
   return(
    <>
-         {/* Header */}
          <div className="fixed top-0 w-full z-10">
         <Header />
       </div>
