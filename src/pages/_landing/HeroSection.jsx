@@ -102,7 +102,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col h-screen overflow-hidden -z-10">
+    <div className="relative flex flex-col h-screen overflow-hidden">
       {/* Background Image Carousel */}
       <div className="absolute inset-0 w-full h-full">
         {carouselImages.map((src, index) => (
@@ -126,7 +126,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/50 pointer-events-none z-0"></div>
 
       {/* Content */}
-      <div className="flex flex-col md:flex-row min-h-full relative z-10">
+      <div className="flex flex-col md:flex-row min-h-full relative z-5">
         {/* Left Content */}
         <div className="lg:w-1/2 xl:w-2/5 w-full bg-bg-[#061833]/40 md:bg-[#061833]/70 min-h-full lg:min-h-[60vh] md:min-h-full flex items-center justify-center md:justify-start relative">
           <div className="absolute md:static text-pink-50 font-bold text-3xl sm:text-4xl lg:text-5xl xl:leading-[4rem] xl:tracking-tight px-6 sm:px-10 flex flex-col gap-5 text-center md:text-left">
