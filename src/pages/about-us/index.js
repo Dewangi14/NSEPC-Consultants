@@ -2,31 +2,36 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaCogs, FaRecycle, FaChartLine, FaMapMarkedAlt } from "react-icons/fa";
+import { FaCogs, FaRecycle, FaChartLine, FaMapMarkedAlt, FaBuilding } from "react-icons/fa";
 
 const About = () => {
-  const processSteps = [
+  const processSteps = 
+  [
     {
-      icon: <FaCogs />,
-      title: "Turnkey EPC Solutions",
-      desc: "From concept to commissioning, we deliver complete EPC excellence with precision and reliability.",
+    "icon": <FaBuilding />,
+    "title": "Mega Factories",
+    "desc": "From initial feasibility and detailed engineering to procurement, construction, and commissioning, we deliver fully integrated turnkey EPC solutions designed for accuracy, project transparency, and seamless execution with minimal client intervention."
     },
     {
-      icon: <FaRecycle />,
-      title: "Sustainable Designs",
-      desc: "Each project is engineered for Zero Liquid Discharge (ZLD) and environmental sustainability.",
+    "icon": <FaCogs />,
+    "title": "Turnkey EPC Solutions",
+    "desc": "From initial feasibility and detailed engineering to procurement, construction, and commissioning, we deliver fully integrated turnkey EPC solutions designed for accuracy, project transparency, and seamless execution with minimal client intervention."
     },
     {
-      icon: <FaChartLine />,
-      title: "Optimized ROI",
-      desc: "We design for long-term performance, efficiency, and maximum return on investment.",
+    "icon": <FaRecycle />,
+    "title": "Sustainable Designs",
+    "desc": "Every project is developed with a strong commitment to environmental responsibility, incorporating Zero Liquid Discharge (ZLD), waste minimization, and sustainable process engineering that aligns with evolving regulatory and future industry requirements."
     },
     {
-      icon: <FaMapMarkedAlt />,
-      title: "Nationwide Expertise",
-      desc: "Successfully executed ethanol projects across India, ensuring consistent quality and results.",
+    "icon": <FaChartLine />,
+    "title": "Optimized ROI",
+    "desc": "Our engineering approach focuses on maximizing plant output, lowering operational cost, enhancing efficiency, and ensuring faster payback cycles, allowing clients to achieve superior long-term profitability and business value from every project."
     },
-  ];
+    {
+    "icon": <FaMapMarkedAlt />,
+    "title": "Nationwide Expertise",
+    "desc": "With ethanol and biofuel facilities executed across multiple states in India, we bring extensive regional understanding, proven on-ground experience, and consistent project delivery that ensures high-quality results regardless of project scale or location."
+    }]    
   return (
     <>
       <Head>
@@ -47,45 +52,14 @@ const About = () => {
 
       <div className="flex flex-col bg-pink-50 h-full">
         {/* Banner */}
-        <div className="relative w-full bg-[#061833] bg-[url(/assets/banner-image-bw.jpg)] bg-cover bg-center bg-no-repeat bg-fixed overflow-hidden pt-40 pb-28 px-5 text-center flex flex-col justify-center items-center gap-8">
+        <div className="relative w-full bg-[#061833] bg-[url(/assets/banner-image.jpeg)] bg-cover bg-center bg-no-repeat bg-fixed overflow-hidden pt-40 pb-28 px-5 text-center flex flex-col justify-center items-center gap-8">
           {/* Overlay */}
-          <div className="absolute inset-0 bg-[#061833]/60 pointer-events-none z-0"></div>
+          <div className="absolute inset-0 bg-[#061833]/70 pointer-events-none z-0"></div>
           <h1 className="z-5 text-white font-bold text-xl lg:text-4xl lg:w-1/2 mx-auto text-center">
             Your EPC Partner for Sustainable Ethanol Projects
           </h1>
           <p className="text-white font-medium z-5">Home / About Us</p>
         </div>
-
-        {/* Who We Are */}
-        {/* <div className="flex flex-col lg:flex-row gap-10 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 ">
-          <div className="flex flex-col w-1/2">
-            <div className="flex flex-col gap-5">
-              <h2 className="text-[#061833] font-bold text-xl lg:text-4xl">
-                Who We Are
-              </h2>
-              <p>
-                N.S. EPC Consultants India Pvt. Ltd. is a trusted Engineering,
-                Procurement & Construction (EPC) partner with 18+ years of
-                experience delivering turnkey ethanol distillery projects across
-                India. We combine engineering precision, policy alignment, and
-                sustainable design to help industries lead the clean energy
-                transition.
-              </p>
-            </div>
-          </div>
-
-          <div className="w-1/2 relative h-[350px] rounded-xl overflow-hidden">
-            <Image
-              src="/assets/banner-image.jpeg"
-              alt="about-us"
-              fill
-              quality={100}
-              priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover object-center"
-            />
-          </div>
-        </div> */}
 
         {/* Who We Are */}
         <div className="relative flex flex-col lg:flex-row items-center gap-12 py-20 px-6 sm:px-10 md:px-16 lg:px-20 bg-white">
@@ -98,7 +72,7 @@ const About = () => {
               <h2 className="text-[#061833] font-bold text-2xl lg:text-4xl">
                 Who We Are
               </h2>
-              <p>
+              <p className="">
                 N.S. EPC Consultants India Pvt. Ltd. is a trusted Engineering,
                 Procurement & Construction (EPC) partner with 18+ years of
                 experience delivering turnkey ethanol distillery projects across
@@ -127,7 +101,7 @@ const About = () => {
                     <h3 className="text-[#061833] font-bold text-2xl">
                       {stat.value}
                     </h3>
-                    <p className="text-gray-600 text-sm">{stat.label}</p>
+                    <p className="text-gray-600 text-md">{stat.label}</p>
                   </div>
                 ))}
               </div>
@@ -135,144 +109,17 @@ const About = () => {
           </div>
 
           {/* Right Side Video */}
-          <div className="w-full lg:w-1/2 relative h-[350px] rounded-xl overflow-hidden shadow-lg">
-            <video
-              className="absolute inset-0 w-full h-full object-cover"
-              src="/assets/plant-worker.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
+          <div className="w-full lg:w-1/2 relative h-[450px] overflow-hidden">
+            <img
+              className="absolute inset-0 w-full h-full object-contain"
+              src="/assets/epc.png"
+              
             />
-            <div className="absolute inset-0 bg-[#061833]/20" />
+            {/* <div className="absolute inset-0 bg-[#061833]/20" /> */}
           </div>
         </div>
 
         {/* What We Deliver */}
-        {/* <div className="flex flex-col py-16 sm:pb-20 px-6 sm:px-10 md:px-16 lg:px-20 bg-white">
-          <div className="flex flex-col gap-5">
-            <h2 className="text-[#061833] font-bold text-xl lg:text-4xl">
-              What We Deliver
-            </h2>
-
-            <p className="mb-5">
-              With deep expertise in grain-based ethanol distilleries, Zero
-              Liquid Discharge (ZLD) systems, and industrial infrastructure, we
-              specialize in designing and executing end-to-end EPC projects
-              aligned with India’s Ethanol Blending Program (EBP). Our solutions
-              integrate feasibility, engineering, procurement, construction, and
-              commissioning — ensuring timely delivery, compliance, and maximum
-              efficiency.
-            </p>
-
-            <div className="flex flex-col gap-2 mx-auto">
-              <div className="flex items-center w-full py-5 rounded-full shadow-lg bg-gradient-to-r to-white from-pink-100">
-                <div className="flex items-center justify-center rounded-full h-40 w-40 bg-[#061833] mx-auto">
-                  <div className="flex items-center justify-center rounded-full h-32 w-32 bg-[#29405c] mx-auto">
-                    <div className="rounded-full h-24 w-24 bg-[#4a6077] mx-auto text-white font-bold text-5xl flex items-center justify-center text-center">
-                      1
-                    </div>
-                  </div>
-                </div>
-
-                <div className="w-2/3 px-5">
-                  Turnkey EPC Solutions – From concept to commissioning.
-                </div>
-              </div>
-
-              <div className="flex items-center w-full py-5 rounded-full shadow-lg bg-gradient-to-r to-white from-pink-100">
-                <div className="w-2/3 px-5">
-                  Sustainable Designs – 100% ZLD compliant plants.
-                </div>
-
-                <div className="flex items-center justify-center rounded-full h-40 w-40 bg-[#061833] mx-auto">
-                  <div className="flex items-center justify-center rounded-full h-32 w-32 bg-[#29405c] mx-auto">
-                    <div className="rounded-full h-24 w-24 bg-[#4a6077] mx-auto text-white font-bold text-5xl flex items-center justify-center text-center">
-                      2
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-center w-full py-5 rounded-full shadow-lg bg-gradient-to-r to-white from-pink-100">
-                <div className="flex items-center justify-center rounded-full h-40 w-40 bg-[#061833] mx-auto">
-                  <div className="flex items-center justify-center rounded-full h-32 w-32 bg-[#29405c] mx-auto">
-                    <div className="rounded-full h-24 w-24 bg-[#4a6077] mx-auto text-white font-bold text-5xl flex items-center justify-center text-center">
-                      3
-                    </div>
-                  </div>
-                </div>
-                <div className="w-2/3 px-5">
-                  Strong ROI – Projects optimized for profitability and
-                  performance.
-                </div>
-              </div>
-
-              <div className="flex items-center w-full py-5 rounded-full shadow-lg bg-gradient-to-r to-white from-pink-100">
-                <div className="w-2/3 px-5">
-                  National Reach – Executed ethanol projects across multiple
-                  states.
-                </div>
-
-                <div className="flex items-center justify-center rounded-full h-40 w-40 bg-[#061833] mx-auto">
-                  <div className="flex items-center justify-center rounded-full h-32 w-32 bg-[#29405c] mx-auto">
-                    <div className="rounded-full h-24 w-24 bg-[#4a6077] mx-auto text-white font-bold text-5xl flex items-center justify-center text-center">
-                      4
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* What We Deliver - 2 */}
-        {/* <div className="py-20 px-6 sm:px-10 md:px-16 lg:px-20 bg-gradient-to-b from-white to-pink-50">
-  <h2 className="text-[#061833] font-bold text-2xl lg:text-4xl mb-10">
-    What We Deliver
-  </h2>
-
-  <div className="relative flex flex-col lg:flex-row items-center justify-between gap-12">
-    {[
-      {
-        icon: <FaCogs size={32} />,
-        title: "Turnkey EPC Solutions",
-        desc: "From concept to commissioning, ensuring seamless execution.",
-      },
-      {
-        icon: <FaRecycle size={32} />,
-        title: "Sustainable Designs",
-        desc: "100% ZLD compliant, eco-conscious plant layouts.",
-      },
-      {
-        icon: <FaChartLine size={32} />,
-        title: "Strong ROI",
-        desc: "Optimized project economics for maximum profitability.",
-      },
-      {
-        icon: <FaMapMarkedAlt size={32} />,
-        title: "National Reach",
-        desc: "Executed ethanol projects across multiple Indian states.",
-      },
-    ].map((item, i) => (
-      <motion.div
-        key={i}
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: i * 0.2 }}
-        viewport={{ once: true }}
-        className="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 w-full lg:w-[22%]"
-      >
-        <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#061833] to-[#29405c] text-white mb-4">
-          {item.icon}
-        </div>
-        <h3 className="font-bold text-lg text-[#061833] mb-2">{item.title}</h3>
-        <p className="text-gray-600 text-sm">{item.desc}</p>
-      </motion.div>
-    ))}
-  </div>
-</div> */}
-
         <section className="relative bg-gradient-to-b from-white to-pink-50 py-20 px-6 sm:px-10 md:px-16 lg:px-20">
           <h2 className="text-[#061833] text-3xl lg:text-4xl font-bold mb-16 text-left">
             What We Deliver
@@ -302,11 +149,11 @@ const About = () => {
                   </div>
 
                   {/* Card Content */}
-                  <div className="bg-white shadow-lg rounded-2xl p-6 w-full border border-gray-100 hover:shadow-2xl transition-all">
+                  <div className="bg-white shadow-lg rounded-2xl p-6 border border-gray-100 hover:shadow-2xl transition-all">
                     <h3 className="text-[#061833] text-xl font-semibold mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -314,6 +161,113 @@ const About = () => {
               ))}
             </div>
           </div>
+        </section>
+
+        {/* Completed Projects */}
+        <section className="relative bg-gradient-to-b from-white to-pink-50 py-20 px-6 sm:px-10 md:px-16 lg:px-20">
+          <h2 className="text-[#061833] text-3xl lg:text-4xl font-bold mb-16 text-left">
+            Completed Projects
+          </h2>
+
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+          <div className="bg-[#061833] rounded-2xl h-[300px] hover:-translate-y-1 shadow-lg hover:transition-all hover:duration-300 px-5 py-6 text-white flex flex-col gap-3">
+
+            <div className="text-2xl font-bold mb-2">
+
+            Green projects by us
+
+            </div>
+
+            <div>
+              <ul className="list-disc pl-5">
+                <li className="">
+                Simbhaoli Sugars unit - Chilwaria.
+                </li>
+                <li className="mt-4">
+                ⁠Simbhaoli Sugars unit - Brijnathpur.
+                </li>
+                <li className="mt-4">
+                Eastern India Bio-fuels, PURNEA
+                </li>
+                <li className="mt-4">
+                Eastern Cements , Bokaro.
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div className="bg-[#061833] rounded-2xl h-[300px] hover:-translate-y-1 shadow-lg hover:transition-all hover:duration-300 px-5 py-6 text-white flex flex-col gap-3">
+
+            <div className="text-2xl font-bold mb-2">
+
+            PMC
+
+            </div>
+
+            <div>
+              <ul className="list-disc pl-5">
+                <li className="">
+                Wave Distillery- Aligarh.
+                </li>
+                <li className="mt-4">
+                L H Sugar (Distillery unit), Pilibhit.
+                </li>
+                <li className="mt-4">
+                ESE Energy, Kudra
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div className="bg-[#061833] rounded-2xl h-[300px] hover:-translate-y-1 shadow-lg hover:transition-all hover:duration-300 px-5 py-6 text-white flex flex-col gap-3">
+
+            <div className="text-2xl font-bold mb-2">
+
+            On Going
+
+            </div>
+
+            <div>
+              <ul className="list-disc pl-5">
+                <li className="">
+                Doab Ethanol, Ballia
+                </li>
+                <li className="mt-4">
+                K2 Ethanol, JHAJHAR
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div className="bg-[#061833] rounded-2xl h-[300px] hover:-translate-y-1 shadow-lg hover:transition-all hover:duration-300 px-5 py-6 text-white flex flex-col gap-3">
+
+            <div className="text-2xl font-bold mb-2">
+
+            Brown Field 
+
+            </div>
+
+            <div>
+              <ul className="list-disc pl-5">
+                <li className="">
+                Ashoka Distillers, Hathin
+                </li>
+                <li className="mt-4">
+                Simbhaoli Distillery, Shimbhaoli.
+                </li>
+                <li className="mt-4">
+                ⁠Eastern India Biofuels, PURNEA.
+                </li>
+                <li className="mt-4">
+                ⁠SNJ Distillery, Ranchi
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+         </div>
         </section>
 
         {/* CTA */}

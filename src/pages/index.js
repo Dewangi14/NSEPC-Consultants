@@ -11,6 +11,7 @@ import Team from './_landing/Team'
 import ContactUs from './_landing/ContactUs'
 import Footer from '../components/Footer'
 import Resources from './_landing/Resources'
+import Achievements from './_landing/Achievements'
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Testimonials/>
       <Team/>
       <Resources/>
+      <Achievements/>
       <ContactUs/>
     </div>
   )

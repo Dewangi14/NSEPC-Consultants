@@ -128,12 +128,13 @@ import Script from 'next/script'
 
 const Payment = () => {
   const router = useRouter();
+  const { name, email, phone } = router.query;
 
   // 🧠 Local state to store form data
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
+    name: name || '',
+    email: email || '',
+    phone: phone || '',
     amount: 36000, // you can make this dynamic if needed
   });
   const [loading, setLoading] = useState(false);
@@ -215,16 +216,16 @@ const Payment = () => {
 
       <div className="flex flex-col gap-5 text-center">
         <motion.div
-          className="text-pink-200 font-bold text-3xl text-center"
+          className="text-pink-200 font-bold text-xl lg:text-3xl text-center"
           animate={{ opacity: [1, 0.3, 1], scale: [1, 1.02, 1] }}
           transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
         >
           ⚠️ &nbsp; Please confirm the available DATE and TIME slots with our team before
           proceeding for payment through the form below.
         </motion.div>
-        <a className="font-bold cursor-pointer" role="button" href={"#contact-details"}>
+        {/* <a className="font-bold cursor-pointer" role="button" href={"#contact-details"}>
           View Contact Details
-        </a>
+        </a> */}
       </div>
 
       <div className="flex flex-col gap-10 lg:gap-32 w-full">
@@ -279,7 +280,7 @@ const Payment = () => {
         </div>
 
         <FadeInFromLeft>
-          <div className="flex flex-col gap-1 w-full items-start justify-center" id="#contact-details">
+          <div className="flex flex-col gap-1 items-start justify-center lg:w-1/2 mx-auto" id="#contact-details">
             <div className="flex gap-2 items-center">
               <div className="p-4 bg-pink-50 text-[#061833] rounded-full">
                 <PiPhoneCallFill size={30} />

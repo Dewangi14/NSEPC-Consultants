@@ -88,9 +88,9 @@ const Choose = () => {
 
       <div className="flex flex-col bg-pink-50 h-full">
         {/* Banner */}
-        <div className="relative w-full bg-[#061833] bg-[url(/assets/banner-image-bw.jpg)] bg-cover bg-center bg-no-repeat bg-fixed overflow-hidden pt-40 pb-28 px-5 text-center flex flex-col justify-center items-center gap-8">
+        <div className="relative w-full bg-[#061833] bg-[url(/assets/banner-image.jpeg)] bg-cover bg-center bg-no-repeat bg-fixed overflow-hidden pt-40 pb-28 px-5 text-center flex flex-col justify-center items-center gap-8">
           {/* Overlay */}
-          <div className="absolute inset-0 bg-[#061833]/60 pointer-events-none z-0"></div>
+          <div className="absolute inset-0 bg-[#061833]/70 pointer-events-none z-0"></div>
           <h1 className="z-5 text-white font-bold text-xl lg:text-4xl lg:w-1/2 mx-auto text-center">
             Building India’s Future with Reliable EPC Expertise
           </h1>
@@ -115,8 +115,15 @@ const Choose = () => {
                 plants engineered for long-term performance.
               </p>
 
+              <p>
+              Under the guidance of our distinguished associate consultant, <b>Shri Bipin Bihari Pathak</b>, we bring unmatched depth and leadership to Bio-ethanol and distillery projects across India. A National Sugar Institute alumnus with over <b>35 years of hands-on experience</b>, Mr. Pathak has successfully led the setup, commissioning, and operation of multiple grain and molasses-based distilleries, driving improvements in production, planning, and quality control.
+
+His expertise lies in conceptualizing scalable project strategies, optimizing plant layouts, ensuring operational safety, building skilled teams, and delivering sustainable, profitable outcomes. Having worked with leading industry organizations, he continues to guide N.S. EPC Consultants in delivering world-class distillery and ethanol solutions—trusted by clients who consistently expand their partnerships with us.
+
+              </p>
+
               {/* Stats */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+              {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 {[
                   { label: "Projects Delivered", value: "50+" },
                   { label: "Years Experience", value: "18+" },
@@ -132,19 +139,15 @@ const Choose = () => {
                     <p className="text-gray-600 text-sm">{stat.label}</p>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
 
           {/* Right Side Video */}
-          <div className="w-full lg:w-1/2 relative h-[350px] rounded-xl overflow-hidden shadow-lg">
-            <video
+          <div className="w-full lg:w-1/2 relative h-[500px] rounded-xl overflow-hidden shadow-lg">
+            <img
               className="absolute inset-0 w-full h-full object-cover"
-              src="/assets/factory-video.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
+              src="/assets/slider-7.jpeg"
             />
             <div className="absolute inset-0 bg-[#061833]/20" />
           </div>
@@ -159,15 +162,11 @@ const Choose = () => {
             {/* Left Side */}
             <div className="w-full lg:w-1/2 relative">
               <div className="rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                <video
-                  src="/assets/factory-video.mp4"
+                <img
+                  src="/assets/slider-5.jpeg"
                   alt="Quality and Innovation"
                   className="w-full h-[450px] object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                ></video>
+                ></img>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#061833]/70 via-transparent to-transparent rounded-3xl"></div>
               </div>
 
