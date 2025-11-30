@@ -170,15 +170,15 @@ const Choose = () => {
             Know Our Team
           </h2>
 
-          <div className="flex flex-col gap-18">
+          <div className="flex flex-col gap-24 md:gap-18">
             {/* 1 */}
-            <div className="flex flex-col lg:flex-row justify-between">
+            <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row justify-between">
               <div className="lg:w-2/5">
                 <div>
                   <img
                     src="/assets/sks.jpeg"
                     alt="sushil-kumar-sharma"
-                    className="w-4/5 h-64 object-cover rounded-md"
+                    className="w-full lg:w-4/5 h-64 object-cover rounded-md"
                   />
                 </div>
               </div>
@@ -207,13 +207,13 @@ const Choose = () => {
               </div>
             </div>
             {/* 2 */}
-            <div className="flex flex-col lg:flex-row-reverse justify-between">
+            <div className="flex flex-col gap-5 lg:0 lg:flex-row-reverse justify-between">
               <div className="lg:w-2/5 w-full">
                 <div className="w-full flex justify-end">
                   <img
                     src="/assets/team-2.webp"
                     alt="sushil-kumar-sharma"
-                    className="w-4/5 h-64 object-cover rounded-md"
+                    className="w-full lg:w-4/5 h-64 object-cover rounded-md"
                   />
                 </div>
               </div>
@@ -243,13 +243,13 @@ const Choose = () => {
               </div>
             </div>
             {/* 3 */}
-            <div className="flex flex-col lg:flex-row justify-between">
+            <div className="flex flex-col gap-5 lg:0 lg:flex-row justify-between">
               <div className="lg:w-2/5">
                 <div>
                   <img
                     src="/assets/team-5.avif"
                     alt="sushil-kumar-sharma"
-                    className="w-4/5 h-64 object-cover rounded-md"
+                    className="w-full lg:w-4/5 h-64 object-cover rounded-md"
                   />
                 </div>
               </div>
