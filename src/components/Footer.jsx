@@ -7,7 +7,7 @@ const Footer = () => {
 
     <div className="py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 bg-[#061833] text-pink-50 flex flex-col gap-10 items-center lg:items-start lg:gap-0 lg:flex-row justify-between border-t-[0.05px] border-pink-50">
       <div className="font-bold text-2xl lg:text-3xl xl:text-4xl flex flex-col gap-5 items-center text-center lg:items-start lg:text-left w-full lg:w-1/4">
-        NS Consultants
+        NSEPC Consultants
         <div className="text-xs xl:text-sm font-light">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry

@@ -4,6 +4,7 @@ import { PiPhoneCallFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import FadeInFromLeft from "@/components/animations/FadeInFromLeft";
 import { useRouter } from "next/router";
+import { FiPaperclip } from "react-icons/fi";
 
 const ContactUs = () => {
   const router = useRouter();
@@ -79,8 +80,9 @@ const SubmitHandler = (e) => {
       </div>
 
       <div className="flex flex-col-reverse lg:flex-row gap-10 lg:gap-6 w-full">
+        <div className=" w-full lg:w-1/2 ">
         <FadeInFromLeft>
-        <div className="flex flex-col gap-1 w-full lg:w-1/2 items-start justify-center">
+        <div className="flex flex-col gap-1 items-start justify-center">
        
           <div className="flex gap-2 items-center">
             <div className="p-4 bg-pink-50 text-[#061833] rounded-full">
@@ -91,7 +93,7 @@ const SubmitHandler = (e) => {
               <div className="font-bold text-lg xl:text-xl">CALL US</div>
 
               <div className="font-light text-xs md:text-sm xl:text-base">
-              +91-7696935365 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; +91-9205127555
+              +91-7696935365 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; +91-9818609767
               </div>
             </div>
           </div>
@@ -103,7 +105,7 @@ const SubmitHandler = (e) => {
               <div className="font-bold text-lg xl:text-xl">CONTACT US</div>
 
               <div className="font-light text-xs md:text-sm xl:text-base">
-                email.for.nsconsultants@something.com
+                info@nsepc.in
               </div>
             </div>
           </div>
@@ -121,8 +123,35 @@ const SubmitHandler = (e) => {
               </div>
             </div>
           </div>
+          <div className="flex gap-2 items-center">
+            <div className="p-4 bg-pink-50 text-[#061833] rounded-full">
+              <FiPaperclip size={30} />
+            </div>
+
+            <div className="flex flex-col gap-2 p-2 w-full">
+              <div className="font-bold text-lg xl:text-xl">GSTIN NO.</div>
+
+              <div className="font-light text-xs md:text-sm xl:text-base">
+              07AAICN3956B1ZI
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-2 items-center">
+            <div className="p-4 bg-pink-50 text-[#061833] rounded-full">
+              <FiPaperclip size={30} />
+            </div>
+
+            <div className="flex flex-col gap-2 p-2 w-full">
+              <div className="font-bold text-lg xl:text-xl">CIN NO.</div>
+
+              <div className="font-light text-xs md:text-sm xl:text-base">
+              U74999DL2022PTC402185
+              </div>
+            </div>
+          </div>
         </div>
         </FadeInFromLeft>
+        </div>
 
         <div className="w-full lg:w-1/2">
 

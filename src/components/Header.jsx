@@ -19,7 +19,7 @@
 //       }`}
 //     >
 //       <div className="container flex justify-between mx-auto p-5 xl:p-8">
-//         <div className="font-bold">NS Consultants</div>
+//         <div className="font-bold">NSEPC Consultants</div>
 
 //         <div className={`flex gap-5 text-xs xl:text-sm ${!isScrolled && "text-shadow-lg"}`}>
 //           <div>Home</div>
@@ -87,12 +87,16 @@ const Header = () => {
   return (
     <div
       className={`header fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-pink-50/60 backdrop-blur-sm text-[#061833]" : "bg-transparent text-pink-50"
+      //  "bg-pink-50/60 backdrop-blur-sm text-[#061833]"
+        // isScrolled ? "bg-pink-50/60 backdrop-blur-sm text-[#061833]" : "bg-transparent text-pink-50"
+        isScrolled ? "bg-pink-50/60 backdrop-blur-sm text-[#061833]" : "bg-white-50/60 backdrop-blur-sm font-medium text-[#061833]"
       }`}
     >
-      <div className="container flex justify-between items-center mx-auto p-5 xl:p-8">
+      <div className="container flex justify-between items-center mx-auto p-5">
         {/* Logo */}
-        <div className="font-bold text-base sm:text-lg z-10 cursor-pointer" onClick={()=>router.push("/")}>NS Consultants</div>
+        <div className="font-bold text-base sm:text-lg z-10 cursor-pointer" onClick={()=>router.push("/")}>
+          <img src="/assets/ns-logo-no-bg.png" className="w-10 lg:w-16" alt="logo"/>
+        </div>
 
         {/* Desktop Menu */}
         <div
@@ -101,7 +105,7 @@ const Header = () => {
           } transition-all duration-300`}
         >
           {menuItems.map((item,idx) => (
-            <div key={idx} className="cursor-pointer hover:text-pink-200 hover:-translate-y-0.5 transition-all duration-300" onClick={()=>router.push(item?.link)}>
+            <div key={idx} className="cursor-pointer hover:font-semibold hover:-translate-y-0.5 transition-all duration-300" onClick={()=>router.push(item?.link)}>
               {item?.key}
             </div>
           ))}

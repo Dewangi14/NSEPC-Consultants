@@ -201,13 +201,10 @@ const Payment = () => {
     }
   };
 
-  console.log(process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID)
-
-
   return (
     <div
       id={"contact"}
-      className="flex flex-col gap-10 lg:gap-20 bg-[#061833] py-16 sm:py-20 lg:py-32 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-pink-50"
+      className="flex flex-col gap-10 lg:gap-14 bg-[#061833] py-16 sm:py-20 lg:py-32 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-pink-50"
     >
       <div className="section-heading-text">
         PAYMENT
@@ -216,7 +213,7 @@ const Payment = () => {
 
       <div className="flex flex-col gap-5 text-center">
         <motion.div
-          className="text-pink-200 font-bold text-xl lg:text-3xl text-center"
+          className="text-pink-200 font-bold text-lg lg:text-2xl text-center"
           animate={{ opacity: [1, 0.3, 1], scale: [1, 1.02, 1] }}
           transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
         >
@@ -226,6 +223,17 @@ const Payment = () => {
         {/* <a className="font-bold cursor-pointer" role="button" href={"#contact-details"}>
           View Contact Details
         </a> */}
+      </div>
+
+      <div className='text-lg font-semibold'>
+        <p>
+
+      Meeting Duration - Two hours
+        </p>
+        <p>
+
+      Meeting charges - 36000 + 18% GST
+        </p>
       </div>
 
       <div className="flex flex-col gap-10 lg:gap-32 w-full">

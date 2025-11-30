@@ -10,7 +10,7 @@ const About = () => {
     {
     "icon": <FaBuilding />,
     "title": "Mega Factories",
-    "desc": "From initial feasibility and detailed engineering to procurement, construction, and commissioning, we deliver fully integrated turnkey EPC solutions designed for accuracy, project transparency, and seamless execution with minimal client intervention."
+    "desc": "Specializing in high-value industrial setups, we develop mega manufacturing units for ethanol projects above ₹100 crore, ensuring optimal land use, efficient plant layouts, and robust infrastructure engineered for high-capacity production and long-term operational stability."
     },
     {
     "icon": <FaCogs />,
@@ -54,7 +54,7 @@ const About = () => {
         {/* Banner */}
         <div className="relative w-full bg-[#061833] bg-[url(/assets/banner-image.jpeg)] bg-cover bg-center bg-no-repeat bg-fixed overflow-hidden pt-40 pb-28 px-5 text-center flex flex-col justify-center items-center gap-8">
           {/* Overlay */}
-          <div className="absolute inset-0 bg-[#061833]/70 pointer-events-none z-0"></div>
+          <div className="absolute inset-0 bg-[#061833]/60 pointer-events-none z-0"></div>
           <h1 className="z-5 text-white font-bold text-xl lg:text-4xl lg:w-1/2 mx-auto text-center">
             Your EPC Partner for Sustainable Ethanol Projects
           </h1>
