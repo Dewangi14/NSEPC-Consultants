@@ -24,7 +24,7 @@ const Team = () => {
         <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
           <div className="h-48 w-48 border-4 border-pink-100 rounded-full">
             <img
-              src="/assets/sks.jpeg"
+              src="/assets/team/sushil.png"
               className="h-full w-full shadow-lg rounded-full object-cover"
             />
           </div>
@@ -47,7 +47,7 @@ const Team = () => {
         <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
           <div className="h-48 w-48 border-4 border-pink-100 rounded-full">
             <img
-              src="/assets/team-2.webp"
+              src="/assets/team/nagaraja.png"
               className="h-full w-full shadow-lg rounded-full object-cover"
             />
           </div>
@@ -70,8 +70,8 @@ const Team = () => {
         <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
           <div className="h-48 w-48 border-4 border-pink-100 rounded-full">
             <img
-              src="/assets/team-5.avif"
-              className="h-full w-full shadow-lg rounded-full object-cover"
+              src="/assets/team/bb-pathak.jpeg"
+              className="h-full w-full shadow-lg rounded-full object-fill"
             />
           </div>
 
@@ -93,8 +93,8 @@ const Team = () => {
         <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
           <div className="h-48 w-48 border-4 border-pink-100 rounded-full">
             <img
-              src="/assets/team-2.webp"
-              className="h-full w-full shadow-lg rounded-full object-cover"
+              src="/assets/team/ap-singh.jpg"
+              className="h-full w-full shadow-lg rounded-full object-fill"
             />
           </div>
 

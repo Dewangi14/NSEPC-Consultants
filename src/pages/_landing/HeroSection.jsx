@@ -104,14 +104,19 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 const carouselImages = [
+  "/assets/sdr-3.jpg",
+  "/assets/sdr-1.jpg",
+  "/assets/sdr-2.jpg",
+  "/assets/sdr-4.jpg",
+  "/assets/sdr-5.jpg",
   "/assets/banner-image.jpeg",
   "/assets/slider-7.jpeg",
   "/assets/vision-bg.jpeg",
   "/assets/mission-bg.jpeg",
-  "/assets/slider-3.jpeg",
+  "/assets/about-us.png",
   "/assets/slider-4.jpeg",
-  "/assets/slider-5.jpeg",
-  "/assets/slider-6.jpeg",
+  // "/assets/slider-5.jpeg",
+
 ];
 
 const HeroSection = () => {

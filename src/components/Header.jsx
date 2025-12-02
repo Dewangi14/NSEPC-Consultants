@@ -1,42 +1,3 @@
-// import React, { useEffect, useState } from "react";
-
-// const Header = () => {
-//   const [isScrolled, setIsScrolled] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       setIsScrolled(window.scrollY > 0);
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   return (
-//     <div
-//       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-//         isScrolled ? "bg-pink-50/60 backdrop-blur-sm text-[#061833]" : "bg-transparent text-pink-50"
-//       }`}
-//     >
-//       <div className="container flex justify-between mx-auto p-5 xl:p-8">
-//         <div className="font-bold">NSEPC Consultants</div>
-
-//         <div className={`flex gap-5 text-xs xl:text-sm ${!isScrolled && "text-shadow-lg"}`}>
-//           <div>Home</div>
-//           <div>About Us</div>
-//           <div>Our Services</div>
-//           <div>Our Clients</div>
-//           <div>Our Projects</div>
-//           <div>Contact Us</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;
-
-
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -86,10 +47,10 @@ const Header = () => {
 
   return (
     <div
-      className={`header fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`header fixed top-0 left-0 w-full z-50 transition-all duration-300 font-medium ${
       //  "bg-pink-50/60 backdrop-blur-sm text-[#061833]"
         // isScrolled ? "bg-pink-50/60 backdrop-blur-sm text-[#061833]" : "bg-transparent text-pink-50"
-        isScrolled ? "bg-pink-50/60 backdrop-blur-sm text-[#061833]" : "bg-white-50/60 backdrop-blur-sm font-medium text-[#061833]"
+        isScrolled ? "bg-pink-50/60 backdrop-blur-sm text-[#061833]" : "bg-pink-50/30 backdrop-blur-sm text-[#061833]"
       }`}
     >
       <div className="container flex justify-between items-center mx-auto p-5">

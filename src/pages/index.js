@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from "react";
 import HeroSection from './_landing/HeroSection'
 import AboutUs from './_landing/AboutUs'
 import Mission from './_landing/Mission'
@@ -9,16 +9,29 @@ import WhyChooseUs from './_landing/WhyChooseUs'
 import Testimonials from './_landing/Testimonials'
 import Team from './_landing/Team'
 import ContactUs from './_landing/ContactUs'
-import Footer from '../components/Footer'
 import Resources from './_landing/Resources'
 import Achievements from './_landing/Achievements'
+import useSpeakOnVisible from "../hooks/useSpeakOnVisible";
 
 const Home = () => {
+  const aboutRef = useRef(null);
+  const missionRef = useRef(null);
+  const visionRef = useRef(null);
+  const servicesRef = useRef(null);
+  const whyChooseUsRef = useRef(null);
+
+  useSpeakOnVisible([
+    aboutRef,
+    missionRef,
+    // visionRef,
+    // servicesRef,
+    // whyChooseUsRef,
+  ]);
   return (
     <div className='flex flex-col'>
       <HeroSection/>
-      <AboutUs/>
-      <Mission/>
+      <AboutUs ref={aboutRef}/>
+      <Mission ref={missionRef}/>
       <Vision/>
       <Services/>
       <CounterNumbers/>

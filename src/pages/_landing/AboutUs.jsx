@@ -1,12 +1,16 @@
+"use client";
 import FadeInFromBottom from "@/components/animations/FadeInFromBottom";
 import FadeInFromRight from "@/components/animations/FadeInFromRight";
-import React from "react";
+import React, { useRef, forwardRef } from "react";
 import { useRouter } from "next/router";
+import useSpeakOnVisible from "@/hooks/useSpeakOnVisible";
 
-const AboutUs = () => {
+const AboutUs = React.forwardRef((props, ref) => {
   const router = useRouter();
   return (
-    <div className="flex flex-col gap-10 lg:gap-20 bg-pink-50 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-[#061833]">
+    <div ref={ref}
+    data-text={"About Us. Building trust through expertise and execution. NSEPC Consultants India Private Limited is a leading EPC firm delivering turnkey solutions for grain-based ethanol plants. With over one hundred years of combined team experience, we are known for quality, timely execution, and client satisfaction."}
+     className="flex flex-col gap-10 lg:gap-20 bg-pink-50 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-[#061833]">
       {/* Section Heading */}
       <div className="section-heading-text">
         ABOUT US
@@ -21,7 +25,7 @@ const AboutUs = () => {
             <div className="absolute bottom-10 -left-8 sm:bottom-12 sm:-left-10 md:bottom-12 md:-left-12">
               <FadeInFromBottom distance={20} ease="easeIn" duration={0.6}>
                 <img
-                  src="/assets/about-us.jpeg"
+                  src="/assets/about-us.png"
                   alt="About us"
                   className="w-64 h-56 sm:w-72 sm:h-64 md:w-80 md:h-72 xl:w-96 xl:h-80 object-cover image-shadow"
                 />
@@ -56,6 +60,6 @@ const AboutUs = () => {
       </div>
     </div>
   );
-};
+});
 
 export default AboutUs;

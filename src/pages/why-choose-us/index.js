@@ -176,9 +176,9 @@ const Choose = () => {
               <div className="lg:w-2/5">
                 <div>
                   <img
-                    src="/assets/sks.jpeg"
+                    src="/assets/team/sushil.png"
                     alt="sushil-kumar-sharma"
-                    className="w-full lg:w-4/5 h-64 object-cover rounded-md"
+                    className="w-full lg:w-4/5 h-64 object-fill rounded-md"
                   />
                 </div>
               </div>
@@ -210,10 +210,10 @@ const Choose = () => {
             <div className="flex flex-col gap-5 lg:0 lg:flex-row-reverse justify-between">
               <div className="lg:w-2/5 w-full">
                 <div className="w-full flex justify-end">
-                  <img
-                    src="/assets/team-2.webp"
-                    alt="sushil-kumar-sharma"
-                    className="w-full lg:w-4/5 h-64 object-cover rounded-md"
+                <img
+                    src="/assets/team/nagaraja.png"
+                    alt="nagaraja"
+                    className="w-full lg:w-4/5 h-64 object-fill rounded-md"
                   />
                 </div>
               </div>
@@ -246,10 +246,10 @@ const Choose = () => {
             <div className="flex flex-col gap-5 lg:0 lg:flex-row justify-between">
               <div className="lg:w-2/5">
                 <div>
-                  <img
-                    src="/assets/team-5.avif"
+                <img
+                    src="/assets/team/bb-pathak.jpeg"
                     alt="sushil-kumar-sharma"
-                    className="w-full lg:w-4/5 h-64 object-cover rounded-md"
+                    className="w-full lg:w-4/5 h-64 object-fill rounded-md"
                   />
                 </div>
               </div>
@@ -291,7 +291,7 @@ const Choose = () => {
             <div className="w-full lg:w-1/2 relative">
               <div className="rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                 <img
-                  src="/assets/slider-5.jpeg"
+                  src="/assets/sdr-3.jpg"
                   alt="Quality and Innovation"
                   className="w-full h-[450px] object-cover"
                 ></img>
