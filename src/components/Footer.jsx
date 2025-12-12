@@ -1,7 +1,10 @@
+import { useRouter } from "next/router";
 import React from "react";
 import { FaFacebook, FaLinkedin, FaYoutube, FaRss } from "react-icons/fa";
 
+
 const Footer = () => {
+  const router = useRouter()
   return (
     <div className="flex flex-col">
 
@@ -13,7 +16,7 @@ const Footer = () => {
           industry. Lorem Ipsum has been the industry
         </div>
         <div className="">
-        <button className="bg-pink-50 rounded-full px-5 py-2 xl:px-7 xl:py-2.5 text-xs xl:text-sm font-bold text-[#061833] cursor-pointer mx-auto w-full">
+        <button className="bg-pink-50 rounded-full px-5 py-2 xl:px-7 xl:py-2.5 text-xs xl:text-sm font-bold text-[#061833] cursor-pointer mx-auto w-full" onClick={()=>router?.push("/#contact")}>
        Get In Touch With Us
         </button>
       </div>
@@ -23,27 +26,27 @@ const Footer = () => {
         <div className="text-sm xl:text-base font-bold flex flex-col gap-5">
           Discover
           <div className="flex flex-col gap-3 font-light text-xs xl:text-sm">
-            <div>Milestones</div>
+            <div className="cursor-pointer" onClick={()=>router?.push("/about-us")}>About Us</div>
 
-            <div>Case Studies</div>
-            <div>Feedbacks</div>
+            <div className="cursor-pointer" onClick={()=>router?.push("/#resources")}>Resources</div>
+            <div className="cursor-pointer" onClick={()=>router?.push("/#team")}>Our Team</div>
           </div>
         </div>
         <div className="text-sm xl:text-base font-bold flex flex-col gap-5">
           About
           <div className="flex flex-col gap-3 font-light text-xs xl:text-sm">
-            <div>Services</div>
+            <div className="cursor-pointer" onClick={()=>router?.push("/#services")}>Services</div>
 
-            <div>Our Products</div>
-            <div>Team</div>
+            <div className="cursor-pointer" onClick={()=>router?.push("/ethanol")}>Ethanol</div>
+            <div className="cursor-pointer" onClick={()=>router?.push("/why-choose-us")}>Our Expertise</div>
           </div>
         </div>
         <div className="text-sm xl:text-base font-bold flex flex-col gap-5">
           Connect
           <div className="flex flex-col gap-3 font-light text-xs xl:text-sm">
-            <div>Contact Us</div>
+            <div className="cursor-pointer" onClick={()=>router?.push("/#contact")}>Contact Us</div>
 
-            <div>Consultation</div>
+            <div className="cursor-pointer" onClick={()=>router?.push("/payment")}>Consultation</div>
           </div>
         </div>
         <div className="text-sm xl:text-base font-bold flex flex-col gap-5">

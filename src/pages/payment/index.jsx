@@ -59,7 +59,6 @@
 //               <div className="mx-auto w-2/3 lg:w-5/12 mt-8">
 //                   <button className="bg-[#061833] px-5 xl:px-7 py-2 xl:py-3 text-sm xl:text-base font-semibold rounded-full text-pink-50 w-full">Proceed to Pay</button>
 //               </div>
-              
 
 //           </div>
 
@@ -67,7 +66,7 @@
 
 //       <FadeInFromLeft>
 //       <div className="flex flex-col gap-1 w-full items-start justify-center" id='#contact-details'>
-     
+
 //         <div className="flex gap-2 items-center">
 //           <div className="p-4 bg-pink-50 text-[#061833] rounded-full">
 //           <PiPhoneCallFill size={30}/>
@@ -116,26 +115,26 @@
 
 // export default Payment
 
-
-import FadeInFromLeft from '@/components/animations/FadeInFromLeft'
-import React, { useState } from 'react'
-import { FaBuildingColumns } from 'react-icons/fa6'
-import { MdEmail } from 'react-icons/md'
-import { PiPhoneCallFill } from 'react-icons/pi'
+import FadeInFromLeft from "@/components/animations/FadeInFromLeft";
+import React, { useState } from "react";
+import { FaBuildingColumns } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { PiPhoneCallFill } from "react-icons/pi";
 import { motion } from "framer-motion";
-import { useRouter } from 'next/router'
-import Script from 'next/script'
+import { useRouter } from "next/router";
+import Script from "next/script";
 
 const Payment = () => {
   const router = useRouter();
   const { name, email, phone } = router.query;
 
-  // 🧠 Local state to store form data
+  // Local state to store form data
   const [formData, setFormData] = useState({
-    name: name || '',
-    email: email || '',
-    phone: phone || '',
-    amount: 36000, // you can make this dynamic if needed
+    name: name || "",
+    email: email || "",
+    phone: phone || "",
+    gst: '',
+    amount: 42480, // you can make this dynamic if needed
   });
   const [loading, setLoading] = useState(false);
 
@@ -161,7 +160,11 @@ const Payment = () => {
       const orderResponse = await fetch("/api/razorpay", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount: formData.amount }),
+        body: JSON.stringify({
+          amount: formData.amount,
+          gst: formData.gst
+        }),
+        
       });
       const order = await orderResponse.json();
 
@@ -174,10 +177,27 @@ const Payment = () => {
         description: "Consultation Booking Payment",
         image: "/logo.png",
         order_id: order.id,
-        handler: function (response) {
-          alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
-          router.push("/payment/success"); // optional success page
+        handler: async function (response) {
+          try {
+            // Call backend to verify signature + send email
+            await fetch("/api/verifyPayment", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                order_id: response.razorpay_order_id,
+                razorpay_payment_id: response.razorpay_payment_id,
+                razorpay_signature: response.razorpay_signature,
+                userEmail: formData.email, // sending user’s email
+              }),
+            });
+        
+            router.push("/payment/success");
+          } catch (error) {
+            console.error("Verification/Email error:", error);
+            alert("Payment succeeded but email failed. Please contact support.");
+          }
         },
+        
         prefill: {
           name: formData.name,
           email: formData.email,
@@ -185,6 +205,7 @@ const Payment = () => {
         },
         notes: {
           address: "NS EPC Consultants Office",
+          gst_number: formData.gst,
         },
         theme: {
           color: "#061833",
@@ -217,23 +238,17 @@ const Payment = () => {
           animate={{ opacity: [1, 0.3, 1], scale: [1, 1.02, 1] }}
           transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
         >
-          ⚠️ &nbsp; Please confirm the available DATE and TIME slots with our team before
-          proceeding for payment through the form below.
+          ⚠️ &nbsp; Please confirm the available DATE and TIME slots with our
+          team before proceeding for payment through the form below.
         </motion.div>
         {/* <a className="font-bold cursor-pointer" role="button" href={"#contact-details"}>
           View Contact Details
         </a> */}
       </div>
 
-      <div className='text-lg font-semibold'>
-        <p>
-
-      Meeting Duration - Two hours
-        </p>
-        <p>
-
-      Meeting charges - 36000 + 18% GST
-        </p>
+      <div className="text-lg font-semibold">
+        <p>Meeting Duration - 4 hours</p>
+        <p>Meeting charges - 36000 + 18% GST</p>
       </div>
 
       <div className="flex flex-col gap-10 lg:gap-32 w-full">
@@ -253,6 +268,7 @@ const Payment = () => {
                 onChange={handleChange}
                 className="outline-none w-full h-full placeholder-[#061833] text-xs xl:text-base"
                 placeholder="Name"
+                required
               />
             </div>
             <div className="w-full border-b border-[#061833] p-2">
@@ -262,6 +278,7 @@ const Payment = () => {
                 onChange={handleChange}
                 className="outline-none w-full h-full placeholder-[#061833] text-xs xl:text-base"
                 placeholder="Email"
+                required
               />
             </div>
             <div className="w-full border-b border-[#061833] p-2">
@@ -272,6 +289,18 @@ const Payment = () => {
                 className="outline-none w-full h-full placeholder-[#061833] text-xs xl:text-base"
                 type="tel"
                 placeholder="Phone"
+                required
+              />
+            </div>
+
+            <div className="w-full border-b border-[#061833] p-2">
+              <input
+                name="gst"
+                value={formData.gst}
+                onChange={handleChange}
+                className="outline-none w-full h-full placeholder-[#061833] text-xs xl:text-base"
+                placeholder="GST Number"
+                required
               />
             </div>
 
@@ -288,7 +317,10 @@ const Payment = () => {
         </div>
 
         <FadeInFromLeft>
-          <div className="flex flex-col gap-1 items-start justify-center lg:w-1/2 mx-auto" id="#contact-details">
+          <div
+            className="flex flex-col gap-1 items-start justify-center lg:w-1/2 mx-auto"
+            id="#contact-details"
+          >
             <div className="flex gap-2 items-center">
               <div className="p-4 bg-pink-50 text-[#061833] rounded-full">
                 <PiPhoneCallFill size={30} />
@@ -296,7 +328,8 @@ const Payment = () => {
               <div className="flex flex-col gap-2 p-2 w-full">
                 <div className="font-bold text-lg xl:text-xl">CALL US</div>
                 <div className="font-light text-xs md:text-sm xl:text-base">
-                  +91-7696935365 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; +91-9205127555
+                  +91-7696935365 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                  +91-9205127555
                 </div>
               </div>
             </div>
@@ -318,8 +351,8 @@ const Payment = () => {
               <div className="flex flex-col gap-2 p-2 w-full">
                 <div className="font-bold text-lg xl:text-xl">VISIT US</div>
                 <div className="font-light text-xs md:text-sm xl:text-base">
-                  Level 3B, DLF Centre, Sansad Marg, Connaught Place, New Delhi -
-                  110001, India
+                  Level 3B, DLF Centre, Sansad Marg, Connaught Place, New Delhi
+                  - 110001, India
                 </div>
               </div>
             </div>
@@ -330,7 +363,7 @@ const Payment = () => {
       {/* Razorpay SDK */}
       <Script src="https://checkout.razorpay.com/v1/checkout.js" />
     </div>
-  )
-}
+  );
+};
 
-export default Payment
+export default Payment;

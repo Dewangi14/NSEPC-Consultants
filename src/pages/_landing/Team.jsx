@@ -7,7 +7,7 @@ import React from "react";
 const Team = () => {
     const router = useRouter();
   return (
-    <div className="flex flex-col gap-10 lg:gap-20 bg-[#061833] py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-white">
+    <div className="flex flex-col gap-10 lg:gap-20 bg-[#061833] py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-white" id="team">
       <div className="section-heading-text">
         MEET OUR TEAM
         <div className="h-1 w-full bg-gradient-to-r from-pink-300 to-white"></div>
@@ -103,10 +103,10 @@ const Team = () => {
             A.P Singh
             </b>
             <div className="font-light text-stone-300 uppercase text-xs xl:text-base mx-auto">
-              ASSOCIATE CONSULTANT
+            SENIOR ADVISOR
             </div>
         <div className="text-center">
-        Distillery specialist with 35+ years in ethanol projects, production planning, commissioning, and strategic operations.
+        Accomplished leader with 30 years managing ethanol, power, and industrial projects across India and abroad.
             </div>
           </div>
         </div>

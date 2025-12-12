@@ -278,6 +278,32 @@ const Choose = () => {
                 </p>
               </div>
             </div>
+               {/* 2 */}
+               <div className="flex flex-col gap-5 lg:0 lg:flex-row-reverse justify-between">
+              <div className="lg:w-2/5 w-full">
+                <div className="w-full flex justify-end">
+                <img
+                    src="/assets/team/ap-singh.jpg"
+                    alt="ap-singh"
+                    className="w-full lg:w-4/5 h-64 object-contain rounded-md"
+                  />
+                </div>
+              </div>
+
+              <div className="lg:w-3/5 flex flex-col gap-2">
+                <h4 className="text-[#061833] font-bold text-2xl">
+                Mr. A.P. Singh — Senior Advisor, Projects & Operations
+                </h4>
+
+                <p className="text-[#061833] font-semibold text-lg">
+                Project Management Leader | B.Tech (Electrical) | MBA (Operations) | 30+ Years Experience
+                </p>
+
+                <p>
+                With over 30 years of experience in project management, techno-commercial operations, and regulatory compliance, Mr. A.P. Singh has led major energy and ethanol projects across India and abroad. A B.Tech (Electrical) and MBA in Operations, he has directed complex greenfield and brownfield developments, managed distilleries and power plants, and delivered strategic improvements in efficiency, safety, and large-scale project execution.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
