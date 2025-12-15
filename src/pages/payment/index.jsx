@@ -329,7 +329,7 @@ const Payment = () => {
                 <div className="font-bold text-lg xl:text-xl">CALL US</div>
                 <div className="font-light text-xs md:text-sm xl:text-base">
                   +91-7696935365 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-                  +91-9205127555
+                  +91-9818609767
                 </div>
               </div>
             </div>
@@ -340,7 +340,7 @@ const Payment = () => {
               <div className="flex flex-col gap-2 p-2 w-full">
                 <div className="font-bold text-lg xl:text-xl">CONTACT US</div>
                 <div className="font-light text-xs md:text-sm xl:text-base">
-                  email.for.nsconsultants@something.com
+                  info@nsepc.in
                 </div>
               </div>
             </div>
