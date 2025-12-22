@@ -134,7 +134,8 @@ const Payment = () => {
     email: email || "",
     phone: phone || "",
     gst: '',
-    amount: 42480, // you can make this dynamic if needed
+    // amount: 42480, 
+    amount: 1, // you can make this dynamic if needed
   });
   const [loading, setLoading] = useState(false);
 
