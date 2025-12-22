@@ -6,15 +6,33 @@ const SpeechContext = createContext();
 export const SpeechProvider = ({ children }) => {
   const [speechEnabled, setSpeechEnabled] = useState(false);
 
+  // const toggleSpeech = () => {
+  //   setSpeechEnabled((prev) => {
+  //     if (prev === true) {
+  //       // If user is turning OFF → immediately stop speaking
+  //       window.speechSynthesis.cancel();
+  //     }
+  //     return !prev;
+  //   });
+  // };
+
   const toggleSpeech = () => {
     setSpeechEnabled((prev) => {
-      if (prev === true) {
-        // If user is turning OFF → immediately stop speaking
+      const next = !prev;
+  
+      if (next === true) {
+        // 🔓 UNLOCK SPEECH WITH USER GESTURE
+        const unlock = new SpeechSynthesisUtterance(" ");
+        unlock.volume = 0; // silent
+        window.speechSynthesis.speak(unlock);
+      } else {
         window.speechSynthesis.cancel();
       }
-      return !prev;
+  
+      return next;
     });
   };
+  
 
   return (
     <SpeechContext.Provider value={{ speechEnabled, toggleSpeech }}>

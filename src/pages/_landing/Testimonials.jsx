@@ -98,7 +98,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = React.forwardRef((props, ref) => {
   const [current, setCurrent] = useState(0);
 
   const next = () => {
@@ -114,6 +114,8 @@ const Testimonials = () => {
   return (
     <div
       id={"clients"}
+      ref={ref} 
+      data-text={"What Our Clients Say."}
       className="flex flex-col gap-20 lg:gap-32 bg-pink-50 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-[#061833]"
     >
       <div className="section-heading-text">
@@ -176,6 +178,6 @@ const Testimonials = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Testimonials;

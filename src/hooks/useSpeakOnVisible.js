@@ -73,7 +73,7 @@ const useSpeakOnVisible = (sections) => {
 
       // Pick Aaron first
       let selected =
-        voices.find((v) => v.name === "Aaron" && v.lang === "en-US") ||
+        voices.find((v) => v.name === "Samantha" && v.lang === "en-US") ||
 
         // Fallback 1: Browser's default initial voice (same as earlier)
         voices.find((v) => v.default) ||
@@ -93,12 +93,44 @@ const useSpeakOnVisible = (sections) => {
   }, []);
 
   useEffect(() => {
+    // 🔥 SPEAK CURRENT SECTION IMMEDIATELY WHEN SPEECH IS ENABLED
+if (speechEnabled) {
+  sections.forEach((section) => {
+    const el = section?.current;
+    if (!el || !el.dataset?.text) return;
+
+    const rect = el.getBoundingClientRect();
+
+    // Check if section is centered in viewport
+    const isVisible =
+      rect.top < window.innerHeight * 0.5 &&
+      rect.bottom > window.innerHeight * 0.5;
+
+    if (isVisible) {
+      window.speechSynthesis.cancel();
+
+      currentSection.current = el;
+
+      const utterance = new SpeechSynthesisUtterance(el.dataset.text);
+
+      // Apply your global voice config
+      if (voiceRef.current) utterance.voice = voiceRef.current;
+      utterance.rate = 0.5;
+      utterance.pitch = 1.1;
+
+      currentUtterance.current = utterance;
+      window.speechSynthesis.speak(utterance);
+    }
+  });
+}
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const { text } = entry.target.dataset;
+          if (!text || !text.trim()) return;
 
-          if (!speechEnabled) {
+          if (speechEnabled === false) {
             window.speechSynthesis.cancel();
             return;
           }
@@ -113,8 +145,8 @@ const useSpeakOnVisible = (sections) => {
 
             // Apply voice + speech settings
             if (voiceRef.current) utterance.voice = voiceRef.current;
-            utterance.rate = 0.6;
-            utterance.pitch = 0.9;
+            utterance.rate = 0.5;
+            utterance.pitch = 1.1;
 
             currentUtterance.current = utterance;
             window.speechSynthesis.speak(utterance);

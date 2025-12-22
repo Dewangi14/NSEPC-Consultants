@@ -7,10 +7,13 @@ import FadeInFromTop from "@/components/animations/FadeInFromTop";
 import FadeInFromBottom from "@/components/animations/FadeInFromBottom";
 import { useRouter } from "next/router";
 
-const WhyChooseUs = () => {
+const WhyChooseUs = React.forwardRef((props, ref) => {
   const router = useRouter();
   return (
-    <div className="items-center bg-[#061833] text-white py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col gap-10 lg:gap-20">
+    <div 
+    ref={ref} 
+    data-text={"Why Choose Us? ..... Leaders in Green Energy Solutions : Delivering innovative, sustainable, and cost-effective renewable energy projects..... Process Design & Engineering: From process design to execution, we handle every stage efficiently..... Turnkey EPC Project Expertise : One-stop solution for complete project management and implementation..... Rapid Project Execution : Quick setup, optimized timelines, and faster turnaround to meet client goals..... 100+ Years of Combined Expertise : A seasoned team offering proven technical excellence.....Unmatched Client Trust & Retention : High repeat business and zero unhappy customers define our success....."}
+    className="items-center bg-[#061833] text-white py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col gap-10 lg:gap-20">
       {/* Section Heading */}
       <div className="section-heading-text text-white">
         WHY CHOOSE US
@@ -133,6 +136,6 @@ const WhyChooseUs = () => {
       </div>
     </div>
   );
-};
+});
 
 export default WhyChooseUs;

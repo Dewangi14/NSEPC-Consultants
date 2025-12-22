@@ -193,6 +193,35 @@ const Header = () => {
         >
           {speechEnabled ? <IoVolumeHigh /> : <IoMdVolumeOff />}
         </button>
+
+{/* <button
+  onClick={() => {
+    console.log("🔊 CLICK DETECTED");
+
+    const utterance = new SpeechSynthesisUtterance(
+      "Speech system test. If you hear this, audio is working."
+    );
+
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+
+    // IMPORTANT: pick FIRST available voice
+    const voices = window.speechSynthesis.getVoices();
+    if (voices.length > 0) {
+      utterance.voice = voices[0];
+    }
+
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+
+    toggleSpeech();
+  }}
+  className="hidden md:block p-3 rounded-full text-2xl font-semibold transition-all bg-white cursor-pointer"
+>
+  {speechEnabled ? <IoVolumeHigh /> : <IoMdVolumeOff />}
+</button> */}
+
         </div>
 
         {/* Mobile Menu Icon */}

@@ -2,19 +2,19 @@ import FadeInFromBottom from "@/components/animations/FadeInFromBottom";
 import React from "react";
 import { useRouter } from "next/router";
 
-const Services = () => {
+const Services = React.forwardRef((props, ref) => {
   const router = useRouter()
   const services = [
     {
       title: "PMC",
       subtitle: "(Project Management & Control)",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      desc: "We establish an on-site project office with engineering staff, manage erection, installation, commissioning, and post-completion monitoring, and hand over the project after proven successful operation.",
       link: "",
     },
     {
         title: "EPC",
         subtitle:"(Engineering Procurement & Construction)",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+        desc: "We execute complete engineering, procurement, and construction, including drawings and civil works, assuming all manpower and cost risks to deliver a fixed-price, end-to-end turnkey project.",
         link: "",
       },
     {
@@ -25,12 +25,12 @@ const Services = () => {
     {
       title: "Compliance Support",
       subtitle:"(MoEFCC, PESO, DFPD, etc.)",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      desc: "We manage all statutory and regulatory approvals, including environmental clearances and PESO, through our consultant network, delivering seamless documentation under a single-window solution.",
       link: "",
     },
     {
       title: "Post Commissioning O & M",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      desc: "We provide operational support or fully manage plant operations under long-term contracts, ensuring smooth performance, while the client supplies raw materials as per agreed terms.",
       link: "",
     },
     {
@@ -40,7 +40,10 @@ const Services = () => {
     },
   ];
   return (
-    <div id={"services"} className="flex flex-col gap-10 lg:gap-20 bg-[#061833] py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-white">
+    <div id={"services"}
+    ref={ref} 
+    data-text={"What We Do..... 1 - Project Management & Control.... 2 - Engineering Procurement & Construction.... 3 - Plant Design, Engineering & Layout Optimization.... 4 - Compliance Support.... 5 - Post Commissioning O & M.... 6 - Work Force Training...."}
+     className="flex flex-col gap-10 lg:gap-20 bg-[#061833] py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-white">
       <div className="section-heading-text">
         WHAT WE DO
         <div className="h-1 w-full bg-gradient-to-r from-pink-300 to-white"></div>
@@ -81,6 +84,6 @@ const Services = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Services;

@@ -19,27 +19,35 @@ const Home = () => {
   const visionRef = useRef(null);
   const servicesRef = useRef(null);
   const whyChooseUsRef = useRef(null);
+  const testimonialsRef = useRef(null);
+  const teamRef = useRef(null);
+  const resourcesRef = useRef(null);
+  const achievementsRef = useRef(null);
 
   useSpeakOnVisible([
     aboutRef,
     missionRef,
-    // visionRef,
-    // servicesRef,
-    // whyChooseUsRef,
+    visionRef,
+    servicesRef,
+    whyChooseUsRef,
+    testimonialsRef,
+    teamRef,
+    resourcesRef,
+    achievementsRef
   ]);
   return (
     <div className='flex flex-col'>
       <HeroSection/>
       <AboutUs ref={aboutRef}/>
       <Mission ref={missionRef}/>
-      <Vision/>
-      <Services/>
+      <Vision ref={visionRef}/>
+      <Services ref={servicesRef}/>
       <CounterNumbers/>
-      <WhyChooseUs/>
-      <Testimonials/>
-      <Team/>
-      <Resources/>
-      <Achievements/>
+      <WhyChooseUs ref={whyChooseUsRef}/>
+      <Testimonials ref={testimonialsRef}/>
+      <Team ref={teamRef}/>
+      <Resources ref={resourcesRef}/>
+      <Achievements ref={achievementsRef}/>
       <ContactUs/>
     </div>
   )

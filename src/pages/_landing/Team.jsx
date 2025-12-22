@@ -4,10 +4,18 @@ import FadeInFromTop from "@/components/animations/FadeInFromTop";
 import { useRouter } from "next/router";
 import React from "react";
 
-const Team = () => {
+const Team = React.forwardRef((props, ref) => {
     const router = useRouter();
   return (
-    <div className="flex flex-col gap-10 lg:gap-20 bg-[#061833] py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-white" id="team">
+    <div 
+    ref={ref} 
+    data-text={`Meet Our Team..... 
+      Mr Sushil Kumar Sharma : CO-FOUNDER.. He is an Experienced techno-commercial leader with 28 years in machinery sourcing, project execution, and strategic operational growth.....
+     Mr. N. Nagraj : CO-FOUNDER & MENTOR.. He is a Polymer technologist with 28 years’ experience mentoring teams, executing major projects, and guiding technical excellence.....
+     Shri B. B. Pathak : ASSOCIATE CONSULTANT.. He is a Distillery specialist with 35+ years in ethanol projects, production planning, commissioning, and strategic operations.....
+     Mr. A.P Singh : SENIOR ADVISOR.. Accomplished leader with 30 years managing ethanol, power, and industrial projects across India and abroad.....
+     `}
+    className="flex flex-col gap-10 lg:gap-20 bg-[#061833] py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-white" id="team">
       <div className="section-heading-text">
         MEET OUR TEAM
         <div className="h-1 w-full bg-gradient-to-r from-pink-300 to-white"></div>
@@ -125,6 +133,6 @@ const Team = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Team;
