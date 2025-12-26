@@ -134,8 +134,8 @@ const Payment = () => {
     email: email || "",
     phone: phone || "",
     gst: '',
-    // amount: 42480, 
-    amount: 1, // you can make this dynamic if needed
+    amount: 42480, 
+    // amount: 1, // you can make this dynamic if needed
   });
   const [loading, setLoading] = useState(false);
 
@@ -300,8 +300,7 @@ const Payment = () => {
                 value={formData.gst}
                 onChange={handleChange}
                 className="outline-none w-full h-full placeholder-[#061833] text-xs xl:text-base"
-                placeholder="GST Number"
-                required
+                placeholder="GST Number (optional)"
               />
             </div>
 

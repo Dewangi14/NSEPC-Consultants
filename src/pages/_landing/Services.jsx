@@ -19,7 +19,7 @@ const Services = React.forwardRef((props, ref) => {
       },
     {
       title: "Plant Design, Engineering & Layout Optimization",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      desc: "We deliver efficient plant designs with optimized layouts that enhance operational flow, safety, and space utilization. Our engineering solutions ensure compliance, scalability, and seamless integration of process, utility, and infrastructure systems.",
       link: "",
     },
     {
@@ -29,14 +29,14 @@ const Services = React.forwardRef((props, ref) => {
       link: "",
     },
     {
-      title: "Post Commissioning O & M",
+      title: "Post Commissioning O & M, Work Force Training",
       desc: "We provide operational support or fully manage plant operations under long-term contracts, ensuring smooth performance, while the client supplies raw materials as per agreed terms.",
       link: "",
     },
     {
-      title: "Work Force Training",
+      title: "Mother Concern - nsconsultants.in",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
-      link: "",
+      link: "https://nsconsultants.in/",
     },
   ];
   return (
@@ -52,7 +52,7 @@ const Services = React.forwardRef((props, ref) => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full text-[#061833]">
         {services?.map((item, idx) => {
           return (
-            <div className="h-72 xl:h-80 bg-pink-50 rounded-2xl border-t-4 border-t-pink-50 image-shadow p-5 w-full">
+            <div className={`h-72 xl:h-80 bg-pink-50 rounded-2xl border-t-4 border-t-pink-50 image-shadow p-5 w-full ${item?.link?.length > 0 && "cursor-pointer"}`}  onClick={() => item?.link && router.push(item.link)}>
               <div className="flex flex-col gap-3 h-full">
                 <div className="rounded-full bg-[#061833] text-pink-50 text-xl p-5 w-8 h-8 flex justify-center items-center">
                   {idx + 1}

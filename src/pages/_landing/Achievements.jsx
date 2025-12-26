@@ -27,7 +27,7 @@ const Achievements = React.forwardRef((props, ref) => {
       <div className="grid gap-8 w-full max-w-6xl">
         {items.map((item, index) => (
           <FadeInFromBottom key={index}>
-            <div className="w-1/3 mx-auto bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-gray-100">
+            <div className="lg:w-1/3 mx-auto bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-gray-100">
               {/* Image */}
               <div className="w-full h-52 overflow-hidden bg-gray-50">
                 <img

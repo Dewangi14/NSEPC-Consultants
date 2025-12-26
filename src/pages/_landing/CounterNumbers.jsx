@@ -91,7 +91,7 @@ const CounterNumbers = () => {
 
       <div className='flex flex-col xl:gap-1'>
         <div className='font-extrabold text-4xl xl:text-5xl'>
-          <Counter from={0} to={115} duration={2} />+
+          <Counter from={0} to={131} duration={2} />+
         </div>
         <div className='text-sm xl:text-base'>
           Erection & Commissioning done
@@ -100,7 +100,7 @@ const CounterNumbers = () => {
 
       <div className='flex flex-col xl:gap-1'>
         <div className='font-extrabold text-4xl xl:text-5xl'>
-          <Counter from={0} to={15} duration={2} />+
+          <Counter from={0} to={21} duration={2} />+
         </div>
         <div className='text-sm xl:text-base'>
           Years Completed
