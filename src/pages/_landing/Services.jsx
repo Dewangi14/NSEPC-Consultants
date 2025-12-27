@@ -34,8 +34,8 @@ const Services = React.forwardRef((props, ref) => {
       link: "",
     },
     {
-      title: "Mother Concern - nsconsultants.in",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
+      title: "Sister Concern - nsconsultants.in",
+      desc: "We are also doing consultation for EPE plants (expanded polyethylene sheets and rolls) and XLPE plants since 2005 till date commissioned 124 machines in India and abroad",
       link: "https://nsconsultants.in/",
     },
   ];

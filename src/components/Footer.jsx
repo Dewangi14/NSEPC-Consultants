@@ -12,8 +12,7 @@ const Footer = () => {
       <div className="font-bold text-2xl lg:text-3xl xl:text-4xl flex flex-col gap-5 items-center text-center lg:items-start lg:text-left w-full lg:w-1/4">
         NSEPC Consultants
         <div className="text-xs xl:text-sm font-light">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry
+        An integrated EPC and consulting firm delivering end-to-end engineering, project management, and turnkey solutions for industrial and renewable energy projects.
         </div>
         <div className="">
         <button className="bg-pink-50 rounded-full px-5 py-2 xl:px-7 xl:py-2.5 text-xs xl:text-sm font-bold text-[#061833] cursor-pointer mx-auto w-full" onClick={()=>router?.push("/#contact")}>
