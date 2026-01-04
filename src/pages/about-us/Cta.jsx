@@ -1,6 +1,8 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 
 const Cta = React.forwardRef((props, ref) => {
+  const router = useRouter()
   return (
     <div 
     ref={ref}
@@ -19,7 +21,7 @@ const Cta = React.forwardRef((props, ref) => {
             </p>
 
             <div className="flex justify-center mt-3">
-              <button className="bg-[#061833] rounded-full px-6 sm:px-8 lg:px-7 py-2.5 sm:py-3 text-sm sm:text-base lg:text-base font-bold text-pink-50 w-fit cursor-pointer hover:bg-[#0a2850] transition-all duration-300">
+              <button onClick={()=>{router?.push("/payment")}} className="cursor-pointer bg-[#061833] rounded-full px-6 sm:px-8 lg:px-7 py-2.5 sm:py-3 text-sm sm:text-base lg:text-base font-bold text-pink-50 w-fit cursor-pointer hover:bg-[#0a2850] transition-all duration-300">
                 Schedule a Consultation
               </button>
             </div>

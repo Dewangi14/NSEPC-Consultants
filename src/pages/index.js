@@ -49,6 +49,12 @@ const Home = () => {
       <Resources ref={resourcesRef}/>
       <Achievements ref={achievementsRef}/>
       <ContactUs/>
+
+      <a href="https://wa.me/7696935365?text=Hello%20%2C%20I%20want%20to%20know%20more%20about%20NSEPC%20Consultants" 
+target="_blank" 
+className="fixed w-10 h-10 md:w-14 md:h-14 lg:w-18 lg:h-18 bottom-5 right-5 bg-green-500 rounded-full text-center shadow-lg z-10 flex items-center justify-center animate-bounce cursor-pointer">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
     </div>
   )
 }

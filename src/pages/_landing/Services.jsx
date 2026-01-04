@@ -52,7 +52,9 @@ const Services = React.forwardRef((props, ref) => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full text-[#061833]">
         {services?.map((item, idx) => {
           return (
-            <div className={`h-72 xl:h-80 bg-pink-50 rounded-2xl border-t-4 border-t-pink-50 image-shadow p-5 w-full ${item?.link?.length > 0 && "cursor-pointer"}`}  onClick={() => item?.link && router.push(item.link)}>
+            <div className={`h-72 xl:h-80 bg-pink-50 rounded-2xl border-t-4 border-t-pink-50 image-shadow p-5 w-full ${item?.link?.length > 0 && "cursor-pointer"}`}  onClick={() => { if (item?.link) {
+              window.open(item.link, "_blank", "noopener,noreferrer");
+            }}}>
               <div className="flex flex-col gap-3 h-full">
                 <div className="rounded-full bg-[#061833] text-pink-50 text-xl p-5 w-8 h-8 flex justify-center items-center">
                   {idx + 1}
