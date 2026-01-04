@@ -116,13 +116,14 @@
 // export default Payment
 
 import FadeInFromLeft from "@/components/animations/FadeInFromLeft";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { FaBuildingColumns } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Script from "next/script";
+import useSpeakOnVisible from "@/hooks/useSpeakOnVisible";
 
 const Payment = () => {
   const router = useRouter();
@@ -223,9 +224,23 @@ const Payment = () => {
     }
   };
 
+  const textRef = useRef(null);
+
+useSpeakOnVisible([
+  textRef
+]);
+
   return (
+    
     <div
       id={"contact"}
+      ref={textRef}
+      data-text={`
+      Please confirm the available DATE and TIME slots with our
+          team before proceeding for payment through the form below.
+          Meeting Duration - 4 hours.
+          Meeting charges - rupees 36000 + 18% GST.
+                  `}
       className="flex flex-col gap-10 lg:gap-14 bg-[#061833] py-16 sm:py-20 lg:py-32 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-pink-50"
     >
       <div className="section-heading-text">
@@ -249,7 +264,7 @@ const Payment = () => {
 
       <div className="text-lg font-semibold">
         <p>Meeting Duration - 4 hours</p>
-        <p>Meeting charges - 36000 + 18% GST</p>
+        <p>Meeting charges - ₹ 36000 + 18% GST</p>
       </div>
 
       <div className="flex flex-col gap-10 lg:gap-32 w-full">
