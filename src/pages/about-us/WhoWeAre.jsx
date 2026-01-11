@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const WhoWeAre = React.forwardRef((props, ref) => {
@@ -68,12 +69,17 @@ const WhoWeAre = React.forwardRef((props, ref) => {
 
           {/* Right Side Video */}
           <div className="w-full lg:w-1/2 relative h-[450px] overflow-hidden">
-            <img
-              className="absolute inset-0 w-full h-full object-contain"
-              src="/assets/epc.png"
-              
-            />
-            {/* <div className="absolute inset-0 bg-[#061833]/20" /> */}
+        
+            <div className="relative inset-0 w-full h-full object-contain">
+
+                  <Image
+                             src="/assets/epc.png"
+                             alt="EPC"
+                             fill
+                             priority
+                             className="object-contain"
+                           />
+            </div>
           </div>
         </div>
   )

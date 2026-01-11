@@ -4,13 +4,18 @@ import FadeInFromRight from "@/components/animations/FadeInFromRight";
 import React, { useRef, forwardRef } from "react";
 import { useRouter } from "next/router";
 import useSpeakOnVisible from "@/hooks/useSpeakOnVisible";
+import Image from "next/image";
 
 const AboutUs = React.forwardRef((props, ref) => {
   const router = useRouter();
   return (
-    <div ref={ref}
-    data-text={"About Us. Building trust through expertise and execution. NSEPC Consultants India Private Limited is a leading EPC firm delivering turnkey solutions for grain-based ethanol plants. With over one hundred years of combined team experience, we are known for quality, timely execution, and client satisfaction."}
-     className="flex flex-col gap-10 lg:gap-20 bg-pink-50 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-[#061833]">
+    <div
+      ref={ref}
+      data-text={
+        "About Us. Building trust through expertise and execution. NSEPC Consultants India Private Limited is a leading EPC firm delivering turnkey solutions for grain-based ethanol plants. With over one hundred years of combined team experience, we are known for quality, timely execution, and client satisfaction."
+      }
+      className="flex flex-col gap-10 lg:gap-20 bg-pink-50 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-[#061833]"
+    >
       {/* Section Heading */}
       <div className="section-heading-text">
         ABOUT US
@@ -24,11 +29,15 @@ const AboutUs = React.forwardRef((props, ref) => {
           <div className="bg-[#061833] relative overflow-visible w-64 h-56 sm:w-72 sm:h-64 md:w-80 md:h-72 xl:w-96 xl:h-80 image-shadow">
             <div className="absolute bottom-10 -left-8 sm:bottom-12 sm:-left-10 md:bottom-12 md:-left-12">
               <FadeInFromBottom distance={20} ease="easeIn" duration={0.6}>
-                <img
-                  src="/assets/about-us.png"
-                  alt="About us"
-                  className="w-64 h-56 sm:w-72 sm:h-64 md:w-80 md:h-72 xl:w-96 xl:h-80 object-cover image-shadow"
-                />
+                <div className="relative w-64 h-56 sm:w-72 sm:h-64 md:w-80 md:h-72 xl:w-96 xl:h-80 image-shadow">
+                  <Image
+                    src="/assets/about-us.png"
+                    alt="About us"
+                    fill
+                    priority
+                    className="object-cover"
+                  />
+                </div>
               </FadeInFromBottom>
             </div>
           </div>
@@ -51,7 +60,10 @@ const AboutUs = React.forwardRef((props, ref) => {
 
           <FadeInFromRight>
             <div className="flex justify-center lg:justify-start mt-3">
-              <button className="bg-[#061833] rounded-full px-6 sm:px-8 lg:px-7 py-2.5 sm:py-3 text-sm sm:text-base lg:text-base font-bold text-pink-50 w-fit cursor-pointer hover:bg-[#0a2850] transition-all duration-300" onClick={()=>router.push("/about-us")}>
+              <button
+                className="bg-[#061833] rounded-full px-6 sm:px-8 lg:px-7 py-2.5 sm:py-3 text-sm sm:text-base lg:text-base font-bold text-pink-50 w-fit cursor-pointer hover:bg-[#0a2850] transition-all duration-300"
+                onClick={() => router.push("/about-us")}
+              >
                 Explore More
               </button>
             </div>

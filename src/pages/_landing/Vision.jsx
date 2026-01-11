@@ -36,6 +36,7 @@
 
 import FadeInFromLeft from "@/components/animations/FadeInFromLeft";
 import FadeInFromRight from "@/components/animations/FadeInFromRight";
+import Image from "next/image";
 import React from "react";
 
 const Vision = React.forwardRef((props, ref) => {
@@ -76,11 +77,21 @@ const Vision = React.forwardRef((props, ref) => {
           {/* Mobile Image (shown only below text on small screens) */}
       <div className="flex lg:hidden mt-5 w-full justify-center">
       <FadeInFromLeft duration={0.4}>
-        <img
+        {/* <img
           src="/assets/vision-bg.jpeg"
           className="w-64 h-64 rounded-md image-shadow object-cover"
           alt="Vision"
-        />
+        /> */}
+
+        <div className="relative w-64 h-64 rounded-md image-shadow object-cover">
+                        <Image
+                         src="/assets/vision-bg.jpeg"
+                          alt="Vision"
+                          fill
+                          priority
+                          className="object-cover"
+                        />
+                      </div>
       </FadeInFromLeft>
       </div>
       </div>

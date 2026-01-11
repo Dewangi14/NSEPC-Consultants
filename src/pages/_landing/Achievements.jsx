@@ -1,6 +1,7 @@
 import FadeInFromBottom from "@/components/animations/FadeInFromBottom";
 import FadeInFromLeft from "@/components/animations/FadeInFromLeft";
 import FadeInFromRight from "@/components/animations/FadeInFromRight";
+import Image from "next/image";
 import React from "react";
 
 const Achievements = React.forwardRef((props, ref) => {
@@ -13,10 +14,11 @@ const Achievements = React.forwardRef((props, ref) => {
   ];
 
   return (
-    <section 
-    ref={ref}
-    data-text={`Achievements & Certifications`}
-    className="flex flex-col gap-10 lg:gap-20 bg-pink-50 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-[#061833]">
+    <section
+      ref={ref}
+      data-text={`Achievements & Certifications`}
+      className="flex flex-col gap-10 lg:gap-20 bg-pink-50 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-[#061833]"
+    >
       {/* Section Heading */}
       <div className="section-heading-text">
         ACHIEVEMENTS & CERTIFICATIONS
@@ -29,11 +31,13 @@ const Achievements = React.forwardRef((props, ref) => {
           <FadeInFromBottom key={index}>
             <div className="lg:w-1/3 mx-auto bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-gray-100">
               {/* Image */}
-              <div className="w-full h-52 overflow-hidden bg-gray-50">
-                <img
+              <div className="relative w-full h-52 overflow-hidden bg-gray-50 transition-all duration-300 hover:scale-105">
+                <Image
                   src={item.image}
                   alt={item.title}
-                  className="object-contain w-full h-full p-4 transition-all duration-300 hover:scale-105"
+                  fill
+                  priority
+                  className="object-contain p-4"
                 />
               </div>
 
