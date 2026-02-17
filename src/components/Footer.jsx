@@ -15,7 +15,7 @@ const Footer = () => {
         An integrated EPC and consulting firm delivering end-to-end engineering, project management, and turnkey solutions for industrial and renewable energy projects.
         </div>
         <div className="">
-        <button className="bg-pink-50 rounded-full px-5 py-2 xl:px-7 xl:py-2.5 text-xs xl:text-sm font-bold text-[#061833] cursor-pointer mx-auto w-full" onClick={()=>router?.push("/#contact")}>
+        <button name="get-in-touch" className="bg-pink-50 rounded-full px-5 py-2 xl:px-7 xl:py-2.5 text-xs xl:text-sm font-bold text-[#061833] cursor-pointer mx-auto w-full" onClick={()=>router?.push("/#contact")}>
        Get In Touch With Us
         </button>
       </div>
