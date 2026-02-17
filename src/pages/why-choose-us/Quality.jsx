@@ -15,7 +15,7 @@ const Quality = React.forwardRef((props, ref) => {
     <section 
     ref={ref}
     data-text={`Quality & Innovation...
-     At  NSEPC Consultants , quality is not an act—it’s our engineering culture. Every
+     At  NSEPC India Private Limited , quality is not an act—it’s our engineering culture. Every
           project we deliver undergoes rigorous design validation,
           ISO-grade checks, and continuous innovation to ensure lasting
           performance. From smart plant automation to sustainable Zero Liquid Discharge
@@ -56,7 +56,7 @@ const Quality = React.forwardRef((props, ref) => {
         <p className="text-gray-700 leading-relaxed">
           At{" "}
           <span className="font-semibold text-[#061833]">
-            N.S. EPC Consultants
+          NSEPC India Private Limited
           </span>
           , quality is not an act—it’s our engineering culture. Every
           project we deliver undergoes rigorous design validation,

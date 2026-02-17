@@ -30,7 +30,7 @@ const Banner = () => {
             >
               From reducing oil imports to empowering farmers, ethanol is a
               strategic, clean energy solution. Explore policy progress,
-              bio-refineries and impact — and see how N.S. EPC Consultants
+              bio-refineries and impact — and see how NSEPC India Pvt Ltd
               delivers turnkey ethanol projects.
             </motion.p>
 
@@ -45,7 +45,7 @@ const Banner = () => {
               <a
                 href="#contact"
                 className="inline-block text-white/90 underline font-bold mt-5 md:mt-0"
-                aria-label="Contact N.S. EPC Consultants"
+                aria-label="Contact NSEPC India Pvt Ltd"
               >
                 Contact Us
               </a>

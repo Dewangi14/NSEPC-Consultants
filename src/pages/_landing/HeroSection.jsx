@@ -1,6 +1,3 @@
-"use client";
-
-import Header from "@/components/Header";
 import React, { useEffect, useState } from "react";
 import FadeInFromBottom from "@/components/animations/FadeInFromBottom";
 import { useRouter } from "next/router";
@@ -62,7 +59,7 @@ const HeroSection = () => {
           {/* Featured Tag (Optional - mimic screenshot style) */}
           <FadeInFromBottom duration={0.8}>
             <div className="uppercase text-sm tracking-widest text-white/80 text-shadow-2xl">
-              NSEPC Consultants India Pvt Ltd
+              NSEPC India Pvt Ltd
             </div>
           </FadeInFromBottom>
 

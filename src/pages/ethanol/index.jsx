@@ -1,5 +1,3 @@
-// pages/ethanol.js
-"use client";
 import Head from "next/head";
 import IndiasMission from "./IndiasMission";
 import Banner from "./Banner";
@@ -39,12 +37,11 @@ useSpeakOnVisible([
     <>
       <Head>
         <title>
-          Ethanol in India — Sustainable Fuel & Bio-Refineries | N.S. EPC
-          Consultants
+          Ethanol in India — Sustainable Fuel & Bio-Refineries | NSEPC India Private Limite
         </title>
         <meta
           name="description"
-          content="Explore ethanol in India — policy, bio-refineries, farmer benefits and environmental impact. N.S. EPC Consultants offers turnkey ethanol and bio-refinery EPC solutions aligned with EBP and ZLD compliance."
+          content="Explore ethanol in India — policy, bio-refineries, farmer benefits and environmental impact. NSEPC India Private Limited offers turnkey ethanol and bio-refinery EPC solutions aligned with EBP and ZLD compliance."
         />
         <meta
           name="keywords"

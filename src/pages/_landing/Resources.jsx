@@ -1,53 +1,8 @@
-// import React from 'react'
-
-// const Resources = () => {
-//   return (
-//        <div className="flex flex-col gap-20 bg-pink-50 py-20 px-20 items-center text-[#061833]">
-//          <div className="section-heading-text">
-//            RESOURCES
-//            <div className="h-1 w-full bg-gradient-to-r from-[#061833] to-white"></div>
-//          </div>
-
-//          <div className="grid grid-cols-4 gap-2 w-full">
-
-//             <div className='flex flex-col gap-3'>
-
-//                 <div className='h-56'>
-
-//                     <img src='/assets/banner-image.jpeg' className='w-full h-full rounded-3xl'/>
-
-//                 </div>
-
-//                 <div className='flex flex-col gap-1'>
-
-//                     <div className='font-semibold text-black'>
-
-//                         Fully Automatic Fuel Ethanol
-
-//                     </div>
-
-//                     <div className='font-light text-sm'>
-
-//                     It is a long established fact that a reader will be distracted by the readable content
-
-//                     </div>
-//                 </div>
-
-//             </div>
-
-//          </div>
-//        </div>
-//   )
-// }
-
-// export default Resources
-
-"use client";
 import FadeInFromBottom from "@/components/animations/FadeInFromBottom";
 import React from "react";
 
 const Resources = React.forwardRef((props, ref) => {
-  // Example list of YouTube video URLs
+  // List of YouTube video URLs
   const videos = [
     {
       link: "https://www.youtube.com/embed/OX_v_qtVy1g?si=CgEng4Od0zhelQiq",
@@ -58,7 +13,7 @@ const Resources = React.forwardRef((props, ref) => {
     {
       link: "https://www.youtube.com/embed/pQrnHYJteOQ?si=arjoWmyF8cPcsoTU",
       title:
-        "Ethanol consultant : FULLY AUTOMATIC FUEL ETHANOL DISTILLERY BY NSEPC CONSULTANTS INDIA PVT. LTD.",
+        "Ethanol consultant : FULLY AUTOMATIC FUEL ETHANOL DISTILLERY BY NSEPC INDIA PVT. LTD.",
       desc: "",
     },
     {
@@ -91,7 +46,7 @@ const Resources = React.forwardRef((props, ref) => {
       <div className="text-start font-light w-full text-xs md:text-md lg:text-lg">
         <FadeInFromBottom distance={30}>
           Explore our Resource Hub for expert insights and project highlights
-          from N.S. EPC Consultants India Pvt. Ltd., a leading name in
+          from NSEPC India Pvt. Ltd., a leading name in
           Engineering, Procurement, and Construction (EPC). Learn more about our
           grain-based ethanol distillery projects, Zero Liquid Discharge (ZLD)
           solutions, and turnkey plant execution expertise. Stay informed with
@@ -118,12 +73,6 @@ const Resources = React.forwardRef((props, ref) => {
                   allowFullScreen
                 ></iframe>
               </div>
-              {/* <div className="p-5">
-                <h3 className="font-medium text-[#061833] mb-2">
-                {truncateText(item?.title, 7)}
-                </h3>
-                <p className="text-gray-600 text-xs lg:text-sm">{item?.desc}</p>
-              </div> */}
             </div>
           </FadeInFromBottom>
         ))}

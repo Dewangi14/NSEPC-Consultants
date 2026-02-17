@@ -6,7 +6,7 @@ const WhoWeAre = React.forwardRef((props, ref) => {
     <div
     ref={ref}
     data-text={`Who We Are......
-      NSEPC Consultants India Private Limited is a trusted Engineering,
+      NSEPC India Private Limited is a trusted Engineering,
                 Procurement & Construction (EPC) partner with 18+ years of
                 experience delivering turnkey ethanol distillery projects across
                 India. We combine engineering precision, policy alignment, and
@@ -32,7 +32,7 @@ const WhoWeAre = React.forwardRef((props, ref) => {
                 Who We Are
               </h2>
               <p className="">
-                N.S. EPC Consultants India Pvt. Ltd. is a trusted Engineering,
+                NSEPC India Pvt. Ltd. is a trusted Engineering,
                 Procurement & Construction (EPC) partner with 18+ years of
                 experience delivering turnkey ethanol distillery projects across
                 India. We combine engineering precision, policy alignment, and

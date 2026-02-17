@@ -1,4 +1,3 @@
-"use client";
 import { createContext, useContext, useState } from "react";
 
 const SpeechContext = createContext();
@@ -6,22 +5,12 @@ const SpeechContext = createContext();
 export const SpeechProvider = ({ children }) => {
   const [speechEnabled, setSpeechEnabled] = useState(false);
 
-  // const toggleSpeech = () => {
-  //   setSpeechEnabled((prev) => {
-  //     if (prev === true) {
-  //       // If user is turning OFF → immediately stop speaking
-  //       window.speechSynthesis.cancel();
-  //     }
-  //     return !prev;
-  //   });
-  // };
-
   const toggleSpeech = () => {
     setSpeechEnabled((prev) => {
       const next = !prev;
   
       if (next === true) {
-        // 🔓 UNLOCK SPEECH WITH USER GESTURE
+        // UNLOCK SPEECH WITH USER GESTURE
         const unlock = new SpeechSynthesisUtterance(" ");
         unlock.volume = 0; // silent
         window.speechSynthesis.speak(unlock);

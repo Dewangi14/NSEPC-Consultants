@@ -27,7 +27,7 @@ const Team = React.forwardRef((props, ref) => {
       <div className="font-light text-sm xl:text-base">
         <FadeInFromBottom distance={15}>
           Behind every successful project is a team of passionate professionals
-          committed to excellence. At N.S. EPC Consultants, our strength lies in
+          committed to excellence. At NSEPC India Pvt Ltd, our strength lies in
           our people — a diverse group of engineers, designers, and industry
           experts with decades of collective experience. Together, we drive
           innovation, precision, and sustainability across every project we

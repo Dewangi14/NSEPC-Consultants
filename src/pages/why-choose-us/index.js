@@ -26,18 +26,18 @@ useSpeakOnVisible([
     <>
       <Head>
         <title>
-          Why Choose N.S. EPC Consultants — India’s Trusted Ethanol Project
+          Why Choose NSEPC India Private Limited — India’s Trusted Ethanol Project
           Partner
         </title>
         <meta
           name="description"
-          content="Discover why leading investors and industries choose N.S. EPC Consultants for turnkey ethanol distillery and clean energy projects. With 18+ years of expertise, we deliver end-to-end EPC solutions from feasibility to commissioning with 100% ZLD compliance and assured ROI."
+          content="Discover why leading investors and industries choose NSEPC India Private Limited for turnkey ethanol distillery and clean energy projects. With 18+ years of expertise, we deliver end-to-end EPC solutions from feasibility to commissioning with 100% ZLD compliance and assured ROI."
         />
         <meta
           name="keywords"
           content="EPC consultants India, ethanol distillery projects, grain-based ethanol plants, ethanol blending program, ethanol project EPC, Zero Liquid Discharge distillery, clean energy EPC India"
         />
-        <meta name="author" content="N.S. EPC Consultants India Pvt. Ltd." />
+        <meta name="author" content="NSEPC India Private Limited." />
         <meta name="robots" content="index, follow" />
       </Head>
 

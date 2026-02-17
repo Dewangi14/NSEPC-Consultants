@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     const msg = {
       to: userEmail,
       from: "noreply@nsepc.com", // Sender (verified email in SendGrid)
-      subject: "Appointment Confirmed - NSEPC Consultants",
+      subject: "Appointment Confirmed - NSEPC India Pvt Ltd",
       html: `
         <p>Dear Customer,</p>
         <p>Your appointment is successfully confirmed.</p>

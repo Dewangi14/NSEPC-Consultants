@@ -175,7 +175,7 @@ const Payment = () => {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: order.amount,
         currency: order.currency,
-        name: "NS EPC Consultants",
+        name: "NSEPC India Private Limited",
         description: "Consultation Booking Payment",
         image: "/logo.png",
         order_id: order.id,
@@ -206,7 +206,7 @@ const Payment = () => {
           contact: formData.phone,
         },
         notes: {
-          address: "NS EPC Consultants Office",
+          address: "NSEPC India Private Limited",
           gst_number: formData.gst,
         },
         theme: {

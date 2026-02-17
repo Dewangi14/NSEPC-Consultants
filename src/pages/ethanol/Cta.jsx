@@ -7,7 +7,7 @@ const Cta = React.forwardRef((props, ref) => {
     <section
     id="contact"
     ref={ref}
-    data-text={`Partner with N.S. EPC Consultants...
+    data-text={`Partner with NSEPC India Private Limited...
       From feasibility to commissioning, we deliver turnkey ethanol
           and bio-refinery EPC solutions aligned with policy and
           sustainability goals.....
@@ -18,7 +18,7 @@ const Cta = React.forwardRef((props, ref) => {
     <div className="max-w-6xl mx-auto bg-[#061833] rounded-2xl text-white p-10 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
       <div>
         <h3 className="text-2xl lg:text-3xl font-bold">
-          Partner with N.S. EPC Consultants
+          Partner with NSEPC India Pvt Ltd
         </h3>
         <p className="text-white/90 max-w-xl mt-2">
           From feasibility to commissioning, we deliver turnkey ethanol

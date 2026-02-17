@@ -21,7 +21,7 @@ const Niche = React.forwardRef((props, ref) => {
           optimizing plant layouts, ensuring operational safety, building
           skilled teams, and delivering sustainable, profitable outcomes.
           Having worked with leading industry organizations, he continues
-          to guide NSEPC Consultants in delivering world-class
+          to guide NSEPC India Private Limited in delivering world-class
           distillery and ethanol solutions—trusted by clients who
           consistently expand their partnerships with us.
                 `}
@@ -55,7 +55,7 @@ const Niche = React.forwardRef((props, ref) => {
           optimizing plant layouts, ensuring operational safety, building
           skilled teams, and delivering sustainable, profitable outcomes.
           Having worked with leading industry organizations, he continues
-          to guide N.S. EPC Consultants in delivering world-class
+          to guide NSEPC India Private Limited in delivering world-class
           distillery and ethanol solutions—trusted by clients who
           consistently expand their partnerships with us.
         </p>

@@ -1,4 +1,3 @@
-"use client";
 import FadeInFromBottom from "@/components/animations/FadeInFromBottom";
 import FadeInFromRight from "@/components/animations/FadeInFromRight";
 import React, { useRef, forwardRef } from "react";
@@ -12,7 +11,7 @@ const AboutUs = React.forwardRef((props, ref) => {
     <div
       ref={ref}
       data-text={
-        "About Us. Building trust through expertise and execution. NSEPC Consultants India Private Limited is a leading EPC firm delivering turnkey solutions for grain-based ethanol plants. With over one hundred years of combined team experience, we are known for quality, timely execution, and client satisfaction."
+        "About Us. Building trust through expertise and execution. NSEPC India Private Limited is a leading EPC firm delivering turnkey solutions for grain-based ethanol plants. With over one hundred years of combined team experience, we are known for quality, timely execution, and client satisfaction."
       }
       className="flex flex-col gap-10 lg:gap-20 bg-pink-50 py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-20 items-center text-[#061833]"
     >
@@ -51,7 +50,7 @@ const AboutUs = React.forwardRef((props, ref) => {
 
           <FadeInFromRight>
             <div className="font-light text-sm sm:text-base md:text-lg">
-              NS. EPC Consultants India Pvt. Ltd. is a leading EPC firm
+              NSEPC India Pvt. Ltd. is a leading EPC firm
               delivering turnkey solutions for grain-based ethanol plants. With
               over 100 years of combined team experience, we are known for
               quality, timely execution, and client satisfaction.

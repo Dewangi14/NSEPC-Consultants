@@ -1,4 +1,3 @@
-"use client";
 import FadeInFromLeft from "@/components/animations/FadeInFromLeft";
 import FadeInFromRight from "@/components/animations/FadeInFromRight";
 import React, { useRef, forwardRef } from "react";
@@ -10,7 +9,7 @@ const MissionVision = React.forwardRef((props, ref) => {
     <div
       ref={ref}
       data-text={
-        "Mission. At NSEPC Consultants India Private Limited, our mission is to transform India’s ethanol and renewable energy landscape through end-to-end Engineering, Procurement, and Construction (EPC) solutions. With over 18 years of expertise, we deliver turnkey projects that prioritize operational excellence, sustainability, and regulatory compliance."
+        "Mission. At NSEPC India Private Limited, our mission is to transform India’s ethanol and renewable energy landscape through end-to-end Engineering, Procurement, and Construction (EPC) solutions. With over 18 years of expertise, we deliver turnkey projects that prioritize operational excellence, sustainability, and regulatory compliance."
       }
       className="py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-0 bg-[url(/assets/mission-bg.jpeg)] bg-center bg-cover relative"
     >
@@ -24,7 +23,7 @@ const MissionVision = React.forwardRef((props, ref) => {
 
           <FadeInFromLeft>
             <div className="font-light text-sm sm:text-base xl:text-lg w-full lg:w-2/3 leading-relaxed">
-              At N.S. EPC Consultants India Pvt. Ltd., our mission is to
+              At NSEPC India Pvt. Ltd., our mission is to
               transform India’s ethanol and renewable energy landscape through
               end-to-end Engineering, Procurement, and Construction (EPC)
               solutions. With over 18 years of expertise, we deliver turnkey
@@ -36,11 +35,7 @@ const MissionVision = React.forwardRef((props, ref) => {
           {/* Image */}
           <div className="absolute right-5 md:-right-10 lg:-right-20 xl:-right-28 top-5 md:top-8 xl:top-12 hidden lg:block">
             <FadeInFromRight duration={0.4}>
-              {/* <img
-                src="/assets/mission-bg.jpeg"
-                className="w-56 h-56 md:w-64 md:h-64 xl:w-80 xl:h-80 rounded-md object-cover image-shadow"
-                alt="Mission"
-              /> */}
+           
               <div className="relative w-56 h-56 md:w-64 md:h-64 xl:w-80 xl:h-80 rounded-md object-cover image-shadow">
                 <Image
                   src="/assets/mission-bg.jpeg"

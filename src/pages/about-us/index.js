@@ -28,17 +28,17 @@ const About = () => {
     <>
       <Head>
         <title>
-          About N.S. EPC Consultants | Leading Ethanol EPC Firm in India
+          About NSEPC India Private Limited | Leading Ethanol EPC Firm in India
         </title>
         <meta
           name="description"
-          content="Learn about N.S. EPC Consultants India Pvt. Ltd., a trusted EPC firm with 18+ years of experience in ethanol distillery and clean energy projects. We deliver turnkey, ZLD-compliant, and high-ROI solutions aligned with India’s Ethanol Blending Program."
+          content="Learn about NSEPC India Pvt. Ltd., a trusted EPC firm with 18+ years of experience in ethanol distillery and clean energy projects. We deliver turnkey, ZLD-compliant, and high-ROI solutions aligned with India’s Ethanol Blending Program."
         />
         <meta
           name="keywords"
-          content="EPC consultants India, ethanol distillery projects, grain-based ethanol plants, ethanol blending program, ethanol project EPC, Zero Liquid Discharge distillery, clean energy EPC India"
+          content="NSEPC India Private Limited, ethanol distillery projects, grain-based ethanol plants, ethanol blending program, ethanol project EPC, Zero Liquid Discharge distillery, clean energy EPC India"
         />
-        <meta name="author" content="N.S. EPC Consultants India Pvt. Ltd." />
+        <meta name="author" content="NSEPC India Pvt. Ltd." />
         <meta name="robots" content="index, follow" />
       </Head>
 
