@@ -27,7 +27,7 @@ const Cbg =  React.forwardRef((props, ref) => {
               <div className="order-1 lg:order-1 w-full h-full flex justify-start">
                 <img
                   className="w-full h-full object-cover"
-                  src="/assets/cbg-diagram.png"
+                  src="/assets/webp/cbg-diagram.webp"
                 />
               </div>
             </div>

@@ -7,7 +7,7 @@ const Vision = React.forwardRef((props, ref) => {
   return (
     <div ref={ref} 
     data-text={"Vision. At NSEPC India Private Limited, our vision is to be a trusted global EPC partner in ethanol and biofuel infrastructure development. We aspire to create large-scale, future-ready facilities that drive sustainable growth, technological excellence, and long-term value for our clients across energy-driven industries."}
-    className="relative flex flex-row-reverse py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-0 bg-[url(/assets/vision-bg.jpeg)] bg-no-repeat bg-cover h-full w-full">
+    className="relative flex flex-row-reverse py-16 sm:py-20 px-6 sm:px-10 md:px-16 lg:px-0 bg-[url(/assets/webp/vision-bg.webp)] bg-no-repeat bg-cover h-full w-full">
       {/* Overlay */}
       <div className="absolute inset-0 bg-pink-50/90 pointer-events-none z-0"></div>
 
@@ -31,7 +31,7 @@ const Vision = React.forwardRef((props, ref) => {
         <div className="absolute -left-28 top-10 xl:top-12 hidden lg:block">
           <FadeInFromLeft duration={0.4}>
           <img
-            src="/assets/vision-bg.jpeg"
+            src="/assets/webp/vision-bg.webp"
             className="w-72 h-72 xl:w-80 xl:h-80 rounded-md image-shadow object-cover"
             alt="Vision"
           />
@@ -49,7 +49,7 @@ const Vision = React.forwardRef((props, ref) => {
 
         <div className="relative w-64 h-64 rounded-md image-shadow object-cover">
                         <Image
-                         src="/assets/vision-bg.jpeg"
+                         src="/assets/webp/vision-bg.webp"
                           alt="Vision"
                           fill
                           priority

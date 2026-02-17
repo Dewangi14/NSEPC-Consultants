@@ -73,7 +73,7 @@ const WhoWeAre = React.forwardRef((props, ref) => {
             <div className="relative inset-0 w-full h-full object-contain">
 
                   <Image
-                             src="/assets/epc.png"
+                             src="/assets/webp/epc.webp"
                              alt="EPC"
                              fill
                              priority

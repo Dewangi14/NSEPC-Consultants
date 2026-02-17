@@ -49,7 +49,7 @@ const FarmerStory = React.forwardRef((props, ref) => {
       <div className="order-1 lg:order-2 w-full h-84 rounded-xl overflow-hidden shadow-lg">
         <img
           className="w-full h-full object-top"
-          src="/assets/poster-img.png"
+          src="/assets/webp/poster-img.webp"
         />
       </div>
     </div>

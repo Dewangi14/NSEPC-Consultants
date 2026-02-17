@@ -4,7 +4,7 @@ const Banner = React.forwardRef((props, ref) => {
   return (
   <div 
 
-  className="relative w-full bg-[#061833] bg-[url(/assets/banner-image.jpeg)] bg-cover bg-center bg-no-repeat bg-fixed overflow-hidden pt-40 pb-28 px-5 text-center flex flex-col justify-center items-center gap-8"
+  className="relative w-full bg-[#061833] bg-[url(/assets/webp/banner-image.webp)] bg-cover bg-center bg-no-repeat bg-fixed overflow-hidden pt-40 pb-28 px-5 text-center flex flex-col justify-center items-center gap-8"
   >
   {/* Overlay */}
   <div className="absolute inset-0 bg-[#061833]/60 pointer-events-none z-0"></div>

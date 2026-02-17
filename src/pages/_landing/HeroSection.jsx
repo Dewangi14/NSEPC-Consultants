@@ -4,17 +4,17 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 const carouselImages = [
-  "/assets/sdr-3.jpg",
-  "/assets/sdr-1.jpg",
-  "/assets/sdr-2.jpg",
-  "/assets/sdr-4.jpg",
-  "/assets/sdr-5.jpg",
-  "/assets/banner-image.jpeg",
-  "/assets/slider-7.jpeg",
-  "/assets/vision-bg.jpeg",
-  "/assets/mission-bg.jpeg",
-  "/assets/about-us.png",
-  "/assets/slider-4.jpeg",
+  "/assets/webp/sdr-3.webp",
+  "/assets/webp/sdr-1.webp",
+  "/assets/webp/sdr-2.webp",
+  "/assets/webp/sdr-4.webp",
+  "/assets/webp/sdr-5.webp",
+  "/assets/webp/banner-image.webp",
+  "/assets/webp/slider-7.webp",
+  "/assets/webp/vision-bg.webp",
+  "/assets/webp/mission-bg.webp",
+  "/assets/webp/about-us.webp",
+  "/assets/webp/slider-4.webp",
 ];
 
 const HeroSection = () => {

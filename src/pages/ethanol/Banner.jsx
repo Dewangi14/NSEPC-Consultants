@@ -3,15 +3,7 @@ import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <section className="relative h-screen md:h-[66vh] lg:h-[60vh] overflow-hidden bg-[url('/assets/molecules.png')] bg-cover bg-no-repeat">
-          {/* <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="/assets/ethanol-hero.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          /> */}
+    <section className="relative h-screen md:h-[66vh] lg:h-[60vh] overflow-hidden bg-[url('/assets/webp/molecules.webp')] bg-cover bg-no-repeat">
           <div className="absolute inset-0 bg-linear-to-t from-[#061833] to-[#061833]/50" />
           <div className="relative max-w-6xl mx-auto px-6 lg:px-20 lg:pt-20 h-full flex flex-col justify-center items-start gap-6">
             <motion.h1

@@ -34,7 +34,7 @@ const Graphs = React.forwardRef((props, ref) => {
 
         <img
           className="w-full h-full object-contain"
-          src="/assets/ethanol-fuel-blending.png"
+          src="/assets/webp/ethanol-fuel-blending.webp"
         />
         </div>
         <div className="flex flex-col gap-5 justify-start">
@@ -45,7 +45,7 @@ const Graphs = React.forwardRef((props, ref) => {
 
         <img
           className="w-full h-full object-contain"
-         src="/assets/piechart.jpg"
+         src="/assets/webp/piechart.webp"
         />
          
         </div>

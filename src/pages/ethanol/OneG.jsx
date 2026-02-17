@@ -46,7 +46,7 @@ const OneG = React.forwardRef((props, ref) => {
       <div className="order-1 lg:order-1 w-full h-full flex justify-start">
         <img
           className="w-full h-full object-cover"
-          src="/assets/1g-diagram.png"
+          src="/assets/webp/1g-diagram.webp"
         />
       </div>
     </div>

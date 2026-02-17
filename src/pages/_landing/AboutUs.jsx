@@ -30,7 +30,7 @@ const AboutUs = React.forwardRef((props, ref) => {
               <FadeInFromBottom distance={20} ease="easeIn" duration={0.6}>
                 <div className="relative w-64 h-56 sm:w-72 sm:h-64 md:w-80 md:h-72 xl:w-96 xl:h-80 image-shadow">
                   <Image
-                    src="/assets/about-us.png"
+                    src="/assets/webp/about-us.webp"
                     alt="About us"
                     fill
                     priority

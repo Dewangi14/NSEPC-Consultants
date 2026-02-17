@@ -48,7 +48,7 @@ const Header = () => {
           onClick={() => router.push("/")}
         >
               <Image
-                                    src="/assets/ns-logo-no-bg.png"
+                                    src="/assets/webp/ns-logo-no-bg.webp"
                                     alt="logo"
                                     width={100}
                                     height={100}

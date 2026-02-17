@@ -67,7 +67,7 @@ const Niche = React.forwardRef((props, ref) => {
     <div className="w-full lg:w-1/2 relative h-[500px] rounded-xl overflow-hidden shadow-lg">
       <img
         className="absolute inset-0 w-full h-full object-cover"
-        src="/assets/slider-7.jpeg"
+        src="/assets/webp/slider-7.webp"
       />
       <div className="absolute inset-0 bg-[#061833]/20" />
     </div>

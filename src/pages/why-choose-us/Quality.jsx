@@ -34,7 +34,7 @@ const Quality = React.forwardRef((props, ref) => {
       <div className="w-full lg:w-1/2 relative">
         <div className="rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
           <img
-            src="/assets/sdr-3.jpg"
+            src="/assets/webp/sdr-3.webp"
             alt="Quality and Innovation"
             className="w-full h-[450px] object-cover"
           ></img>

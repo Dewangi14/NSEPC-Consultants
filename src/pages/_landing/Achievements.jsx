@@ -7,7 +7,7 @@ import React from "react";
 const Achievements = React.forwardRef((props, ref) => {
   const items = [
     {
-      image: "/assets/certificate.png",
+      image: "/assets/webp/certificate.webp",
       title: "Top 10 Sourcing & Procurement Consultants 2022",
       desc: "Recognized for consistent quality assurance and structured processes across all engineering and execution operations.",
     },

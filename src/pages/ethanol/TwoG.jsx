@@ -13,7 +13,7 @@ const TwoG =  React.forwardRef((props, ref) => {
       <div className="order-1 lg:order-1 w-full h-full flex justify-start">
         <img
           className="w-full h-full object-cover"
-          src="/assets/2g-diagram.png"
+          src="/assets/webp/2g-diagram.webp"
         />
       </div>
       <div className="order-1 lg:order-1 py-10">
