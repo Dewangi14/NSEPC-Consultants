@@ -64,14 +64,16 @@ const Resources = React.forwardRef((props, ref) => {
               className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
             >
               <div className="relative w-full aspect-video">
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full rounded-t-2xl"
-                  src={item?.link}
-                  title={`Resource Video ${index + 1}`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+              <iframe
+  className="absolute top-0 left-0 w-full h-full rounded-t-2xl"
+  src={item?.link}
+  title={`Resource Video ${index + 1}`}
+  loading="lazy"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
               </div>
             </div>
           </FadeInFromBottom>

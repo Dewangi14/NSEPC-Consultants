@@ -32,13 +32,14 @@ const Achievements = React.forwardRef((props, ref) => {
             <div className="lg:w-1/3 mx-auto bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-gray-100">
               {/* Image */}
               <div className="relative w-full h-52 overflow-hidden bg-gray-50 transition-all duration-300 hover:scale-105">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  priority
-                  className="object-contain p-4"
-                />
+              <Image
+  src={item.image}
+  alt={item.title}
+  fill
+  sizes="300px"
+  className="object-contain p-4"
+/>
+
               </div>
 
               {/* Content */}

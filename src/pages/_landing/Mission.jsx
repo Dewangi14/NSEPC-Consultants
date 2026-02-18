@@ -23,25 +23,24 @@ const MissionVision = React.forwardRef((props, ref) => {
 
           <FadeInFromLeft>
             <div className="font-light text-sm sm:text-base xl:text-lg w-full lg:w-2/3 leading-relaxed">
-              At NSEPC India Pvt. Ltd., our mission is to
-              transform India’s ethanol and renewable energy landscape through
-              end-to-end Engineering, Procurement, and Construction (EPC)
-              solutions. With over 18 years of expertise, we deliver turnkey
-              projects that prioritize operational excellence, sustainability,
-              and regulatory compliance.
+              At NSEPC India Pvt. Ltd., our mission is to transform India’s
+              ethanol and renewable energy landscape through end-to-end
+              Engineering, Procurement, and Construction (EPC) solutions. With
+              over 18 years of expertise, we deliver turnkey projects that
+              prioritize operational excellence, sustainability, and regulatory
+              compliance.
             </div>
           </FadeInFromLeft>
 
           {/* Image */}
           <div className="absolute right-5 md:-right-10 lg:-right-20 xl:-right-28 top-5 md:top-8 xl:top-12 hidden lg:block">
             <FadeInFromRight duration={0.4}>
-           
               <div className="relative w-56 h-56 md:w-64 md:h-64 xl:w-80 xl:h-80 rounded-md object-cover image-shadow">
                 <Image
                   src="/assets/webp/mission-bg.webp"
                   alt="Mission"
                   fill
-                  priority
+                  sizes="(max-width: 768px) 256px, 320px"
                   className="object-cover"
                 />
               </div>
@@ -51,13 +50,12 @@ const MissionVision = React.forwardRef((props, ref) => {
           {/* Mobile image (appears below text) */}
           <div className="block lg:hidden mt-5 mx-auto">
             <FadeInFromRight distance={50} delay={0.3}>
-
-<div className="relative w-64 h-64 rounded-md object-cover image-shadow">
+              <div className="relative w-64 h-64 rounded-md object-cover image-shadow">
                 <Image
                   src="/assets/webp/mission-bg.webp"
                   alt="Mission"
                   fill
-                  priority
+                  sizes="(max-width: 768px) 256px, 320px"
                   className="object-cover"
                 />
               </div>

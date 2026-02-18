@@ -44,7 +44,7 @@ const Team = React.forwardRef((props, ref) => {
                 src="/assets/team/sushil.webp"
                 alt="team"
                 fill
-                priority
+                sizes="192px"
                 className="rounded-full object-cover"
               />
             </div>
@@ -66,12 +66,12 @@ const Team = React.forwardRef((props, ref) => {
 
         <FadeInFromBottom distance={20}>
           <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
-<div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full">
+            <div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full">
               <Image
                 src="/assets/team/nagaraja.webp"
                 alt="team"
                 fill
-                priority
+                sizes="192px"
                 className="rounded-full object-cover"
               />
             </div>
@@ -93,12 +93,12 @@ const Team = React.forwardRef((props, ref) => {
 
         <FadeInFromBottom distance={20}>
           <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
-<div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full">
+            <div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full">
               <Image
                 src="/assets/team/bb-pathak.webp"
                 alt="team"
                 fill
-                priority
+                sizes="192px"
                 className="rounded-full object-cover"
               />
             </div>
@@ -120,13 +120,12 @@ const Team = React.forwardRef((props, ref) => {
 
         <FadeInFromBottom distance={20}>
           <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
-
-<div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full bg-white">
+            <div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full bg-white">
               <Image
-                  src="/assets/team/ap-singh.webp"
+                src="/assets/team/ap-singh.webp"
                 alt="team"
                 fill
-                priority
+                sizes="192px"
                 className="rounded-full object-contain"
               />
             </div>

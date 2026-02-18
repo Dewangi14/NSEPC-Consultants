@@ -33,7 +33,7 @@ const AboutUs = React.forwardRef((props, ref) => {
                     src="/assets/webp/about-us.webp"
                     alt="About us"
                     fill
-                    priority
+                    sizes="(max-width:768px) 100vw, 50vw"
                     className="object-cover"
                   />
                 </div>
@@ -50,10 +50,10 @@ const AboutUs = React.forwardRef((props, ref) => {
 
           <FadeInFromRight>
             <div className="font-light text-sm sm:text-base md:text-lg">
-              NSEPC India Pvt. Ltd. is a leading EPC firm
-              delivering turnkey solutions for grain-based ethanol plants. With
-              over 100 years of combined team experience, we are known for
-              quality, timely execution, and client satisfaction.
+              NSEPC India Pvt. Ltd. is a leading EPC firm delivering turnkey
+              solutions for grain-based ethanol plants. With over 100 years of
+              combined team experience, we are known for quality, timely
+              execution, and client satisfaction.
             </div>
           </FadeInFromRight>
 
