@@ -41,7 +41,7 @@ const Team = React.forwardRef((props, ref) => {
           <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
             <div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full">
               <Image
-                src="/assets/team/sushil.png"
+                src="/assets/team/sushil.webp"
                 alt="team"
                 fill
                 priority
@@ -68,7 +68,7 @@ const Team = React.forwardRef((props, ref) => {
           <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
 <div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full">
               <Image
-                src="/assets/team/nagaraja.png"
+                src="/assets/team/nagaraja.webp"
                 alt="team"
                 fill
                 priority
@@ -95,7 +95,7 @@ const Team = React.forwardRef((props, ref) => {
           <div className="flex flex-col items-center gap-1 w-full rounded-b-lg p-1">
 <div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full">
               <Image
-                src="/assets/team/bb-pathak.jpeg"
+                src="/assets/team/bb-pathak.webp"
                 alt="team"
                 fill
                 priority
@@ -123,7 +123,7 @@ const Team = React.forwardRef((props, ref) => {
 
 <div className="relative shadow-lg h-48 w-48 border-4 border-pink-100 rounded-full bg-white">
               <Image
-                  src="/assets/team/ap-singh.jpg"
+                  src="/assets/team/ap-singh.webp"
                 alt="team"
                 fill
                 priority

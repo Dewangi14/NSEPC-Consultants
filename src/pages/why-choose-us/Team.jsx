@@ -23,7 +23,7 @@ const Team = React.forwardRef((props, ref) => {
               <div className="lg:w-2/5">
                 <div>
                   <img
-                    src="/assets/team/sushil.png"
+                    src="/assets/team/sushil.webp"
                     alt="sushil-kumar-sharma"
                     className="w-full lg:w-4/5 h-64 object-fill rounded-md"
                   />
@@ -58,7 +58,7 @@ const Team = React.forwardRef((props, ref) => {
               <div className="lg:w-2/5 w-full">
                 <div className="w-full flex justify-end">
                 <img
-                    src="/assets/team/nagaraja.png"
+                    src="/assets/team/nagaraja.webp"
                     alt="nagaraja"
                     className="w-full lg:w-4/5 h-64 object-fill rounded-md"
                   />
@@ -94,7 +94,7 @@ const Team = React.forwardRef((props, ref) => {
               <div className="lg:w-2/5">
                 <div>
                 <img
-                    src="/assets/team/bb-pathak.jpeg"
+                    src="/assets/team/bb-pathak.webp"
                     alt="sushil-kumar-sharma"
                     className="w-full lg:w-4/5 h-64 object-fill rounded-md"
                   />
@@ -130,7 +130,7 @@ const Team = React.forwardRef((props, ref) => {
               <div className="lg:w-2/5 w-full">
                 <div className="w-full flex justify-end">
                 <img
-                    src="/assets/team/ap-singh.jpg"
+                    src="/assets/team/ap-singh.webp"
                     alt="ap-singh"
                     className="w-full lg:w-4/5 h-64 object-contain rounded-md"
                   />
