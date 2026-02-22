@@ -157,7 +157,7 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
 
-        <link rel="icon" href="/assets/webp/favicon.webp" />
+        <link rel="icon" href="/assets/webp/blue-ns-logo-new.webp" />
 
         {/* Structured Data */}
         <script
